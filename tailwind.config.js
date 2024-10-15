@@ -2,10 +2,24 @@
 export default {
   content: [
     "./*.{html,js}",
-    "./src/**/*.{html,js}"],
+    "./src/**/*.{html,js}"
+  ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'bricolage': ['"Bricolage Grotesque"', 'sans-serif'], // Menambahkan font baru
+      },
+    },
   },
   plugins: [],
 }
+
+
+
+
+
+
+
+
+
 
