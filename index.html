@@ -1,17 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  </head>
-  <body>
-    <header id="site-header"></header>
-    <main id="site-main">
-
-    </main>
-    <footer id="site-footer"></footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <style>
+        a, p, h3, button {
+            @apply font-bricolage;
+        }
+    </style>
+</head>
+<body class="text-white">
+    <main id="site-main"></main>
+    
+    <footer id="site-footer" class="bg-black py-16 px-12 sm:px-10 md:px-10 xl:px-20">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
+            <!-- Logo Section -->
+            <div class="flex flex-col items-center justify-center sm:items-start  md:items-start mb-8 md:mb-0">
+              <img alt="LWK Logo" class="mb-4 w-16 sm:w-20 md:w-24" src="public/Union.svg" />
+              <ul class="flex justify-center md:justify-start space-x-4">
+                  <li><a class="text-white text-lg sm:text-xl md:text-xl xl:text-2xl" href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a class="text-white text-lg sm:text-xl  md:text-xl xl:text-2xl" href="#"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a class="text-white text-lg sm:text-xl  md:text-xl xl:text-2xl" href="#"><i class="fab fa-dribbble"></i></a></li>
+                  <li><a class="text-white text-lg sm:text-xl  md:text-xl xl:text-2xl" href="#"><i class="fab fa-slack"></i></a></li>
+              </ul>
+          </div>
+  
+            <!-- Hot News -->
+            <div class="flex flex-wrap justify-start mb-8 gap-[25px] md:gap-[100px]">
+              <div class="mb-8 md:mb-0 mr-4">
+                  <h3 class="font-bold mb-4 text-base sm:text-base md:text-sm xl:text-xl">Hot News</h3>
+                  <ul class="text-gray-400 text-sm sm:text-base md:text-sm xl:text-base">
+                      <li><a href="#">Disaster</a></li>
+                      <li><a href="#">Politics</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Sport</a></li>
+                      <li><a href="#">Education</a></li>
+                      <li><a href="#">Accident</a></li>
+                  </ul>
+              </div>
+              <div class="mb-8 md:mb-0">
+                  <h3 class="font-bold mb-4 text-base sm:text-base md:text-sm xl:text-xl">Contact Us</h3>
+                  <p class="text-sm sm:text-base md:text-sm xl:text-base">Email:<br /><span class="text-gray-400">mangcoding@gmail.com</span></p>
+                  <p class="text-sm sm:text-base md:text-sm xl:text-base">No Telp:<br /><span class="text-gray-400">095695832655</span></p>
+              </div>
+          </div>          
+            <div>
+                <h3 class="font-bold mb-4 text-lg sm:text-xl md:text-sm xl:text-xl">Get Email Notification</h3>
+                <p class="mb-4 text-gray-400 text-sm sm:text-base md:text-sm xl:text-base">
+                    Sign up to our e-mail newsletter to receive the latest <br> news & updates.
+                </p>
+                <form class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <input class="px-2 py-2 border text-sm focus:outline-none bg-black text-white" placeholder="Email" type="email" />
+                    <button class="px-4 py-2 bg-white text-black" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="container mx-auto  mt-20 border-t border-gray-700 pt-4 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-center text-sm sm:text-base md:text-sm xl:text-base">© 2024 mangcoding. All rights reserved.</p>
+            <a class="text-white mt-4 md:mt-0 text-sm sm:text-base md:text-sm xl:text-base" href="#">Terms of services</a>
+        </div>
+    </footer>
+    
     <script type="module" src="/main.js"></script>
-  </body>
+</body>
 </html>
