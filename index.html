@@ -9,24 +9,24 @@
   <body>
     <header id="site-header"></header>
     <main id="site-main">
-      <section class="hero relative">
-          <div class="text-center flex items-center justify-center pt-[40px] md:pt-12 lg:pt-16 md:px-20 lg:px-[120px]">
-            <div class="h-[2px] w-[104px] md:w-[300px] md:h-[3px] lg:h-[4px] lg:w-full bg-black"></div>
-            <h1 class="text-black flex font-semibold text-xl md:text-3xl lg:text-[40px] mx-[15px]">Sport <span class="text-[#FF0000]">News</span></h1>
-            <div class="h-[2px] w-[104px] md:w-[300px] md:h-[3px] lg:h-[4px] lg:w-full bg-black"></div>
+      <section class="container lg:max-w-[1200px] mx-auto">
+          <div class="text-center flex items-center justify-center pt-[40px] md:pt-16 ">
+            <div class="h-[2px] w-[104px] md:h-[4px] md:w-full bg-black"></div>
+            <h1 class="text-black flex font-semibold text-xl md:text-[40px] mx-[15px]">Sport <span class="text-[#FF0000]">News</span></h1>
+            <div class="h-[2px] w-[104px] md:h-[4px] md:w-full bg-black"></div>
           </div>
-          <div class="relative max-w-full pt-[4px] lg:px-[120px] lg:pt-[26px]">
+          <div class="relative max-w-full pt-[4px]  md:pt-[26px]">
             
-            <img src="/asset/gambarbasket.png" alt="Basketball Match" class="items-center lg:h-[544px] object-cover w-full">
+            <img src="/asset/gambarbasket.png" alt="Basketball Match" class="items-center md:h-[544px] object-cover w-full">
   
             
-            <div class="absolute bottom-5 mx-[24px] lg:left-[144px] lg:right-[144px] text-white bg-black bg-opacity-40 lg:p-[21px] max-w-full">
+            <div class="absolute bottom-5 md:left-[24px] md:right-[24px] text-white bg-black bg-opacity-40 md:p-[21px] max-w-full">
               
-              <h1 class="hidden md:block lg:leading-9 lg:text-[32px] font-bold">IBL All Indonesian: Rajawali Medan wins over Rans Simba Bogor with a score of 68-58</h1>
+              <h1 class="hidden md:block md:leading-9 md:text-[32px] font-bold">IBL All Indonesian: Rajawali Medan wins over Rans Simba Bogor with a score of 68-58</h1>
               <h1 class="md:hidden mx-[12px] text-base font-bold">Record Breaking, IShowSpeed Reaches 1 Million Steaming Views in Jakarta, Indonesia!</h1>
         
-              <div class="flex items-center text-sm mt-[10px] lg:mt-[25px] mx-[12px]">
-                  <span class="bg-[#FFD900] h-[20px] w-[4px] lg:h-[27px] lg:w-[4px] mr-2"></span>
+              <div class="flex items-center text-sm mt-[10px] md:mt-[25px] mx-[12px]">
+                  <span class="bg-[#FFD900] h-[20px] w-[4px] md:h-[27px] md:w-[4px] mr-2"></span>
                   <p class="hidden md:block mr-4">Basket Ball</p>
                   <p class="md:hidden">Populer</p>
                   <span class="hidden md:block ml-auto">Sep. 24, 2024</span>
@@ -35,97 +35,154 @@
         </div>
       </section>
 
-      <section class="main">
-        <div class="lg:px-[120px]">
-          <!-- Card 1 -->
-          <div class="flex items-start lg:gap-[34px] lg:pb-[14px] lg:pt-[40px]">
-            <img src="/asset/gambar2.png" alt="Team photo" class="lg:w-[388px] lg:h-[248px] object-cover">
-              <div>
-                <div class="border-l-4 h-[30px] border-[#003BFF] pl-[15px]">
-                  <h1 class="text-xl font-normal text-black">Badminton</h1>
+      <section class="container lg:max-w-[1200px] mx-auto">
+        <div class="flex flex-col md:flex-row md:gap-[20px] pt-[40px] md:pb-[80px]">
+          <div class="flex-1 space-y-[12px] md:space-y-[14px]">
+            <!-- Card 1 -->
+            <div class="flex items-start gap-[14px] md:gap-[34px]">
+              <img src="/asset/gambar2.png" alt="Team photo" class="w-[388px] h-[248px] object-cover hidden md:block">
+              <img src="/asset/badmin.png" alt="photo personal" class="w-[110px] h-[110px] object-cover md:hidden block">
+                <div>
+                  <div class="border-l-4 h-[20px] md:h-[30px] border-[#003BFF] pl-[8px] md:pl-[15px] flex justify-between">
+                    <h1 class="text-xl font-normal text-black hidden md:block">Badminton</h1>
+                    <p class="text-sm font-normal md:hidden block">Sport</p>
+                    <p class="text-xs font-normal text-[#BABABA] md:hidden block">Sep.24.2024</p>
+                  </div>
+                    <h2 class="text-xl font-bold leading-[30px] pt-5 text-black hidden md:block">Indonesian junior badminton team hunts for achievements at the World Championship</h2>
+                    <p class="text-md font-normal leading-[27px] text-[#8B919E] hidden md:block">indonesia's young badminton team claims to be ready to hunt for achievements at the 2024 Junior World Championship in Nanchang, China, which will be held starting next week. <a href="#" class="text-blue-600">Read More...</a></p> 
+                    <h2 class="text-sm font-normal leading-5 pt-[11px] md:hidden block">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h2>
                 </div>
-                  <h2 class="text-xl font-bold leading-[30px] pt-5 text-black">Indonesian junior badminton team hunts for achievements at the World Championship</h2>
-                  <p class="text-lg font-normal leading-[27px] text-[#8B919E]">indonesia's young badminton team claims to be ready to hunt for achievements at the 2024 Junior World Championship in Nanchang, China, which will be held starting next week. <a href="#" class="text-blue-600">Read More...</a></p>
-              </div>
-          </div>
+            </div>
+            <div class="border border-black opacity-30"></div>
+
            <!-- Card 2 -->
-          <div class="flex items-start gap-[34px] py-[14px]">
-            <img src="/asset/gambarbola.png" alt="Team photo" class="w-[388px] h-[248px] object-cover">
-              <div>
-                <div class="border-l-4 h-[30px] border-[#FF0000] pl-[15px]">
-                  <h1 class="text-xl font-normal text-black">Foot Ball</h1>
+            <div class="flex items-start gap-[14px] md:gap-[34px]">
+              <img src="/asset/gambarbola.png" alt="Team photo" class="w-[388px] h-[248px] object-cover hidden md:block">
+              <img src="/asset/badmin.png" alt="photo personal" class="w-[110px] h-[110px] object-cover md:hidden block">
+                <div>
+                  <div class="border-l-4 h-[20px] md:h-[30px] border-[#003BFF] md:border-[#FF0000] pl-[8px] md:pl-[15px] flex justify-between">
+                    <h1 class="text-xl font-normal text-black hidden md:block">Foot Ball</h1>
+                    <p class="text-sm font-normal md:hidden block">Sport</p>
+                    <p class="text-xs font-normal text-[#BABABA] md:hidden block">Sep.24.2024</p>
+                  </div>
+                    <h2 class="text-xl font-bold leading-[30px] pt-5 text-black hidden md:block">Shin Tae-Yong calls up 27 names to face Bahrain and China</h2>
+                    <p class="text-md font-normal leading-[27px] text-[#8B919E] hidden md:block">Indonesian senior national team coach Shin Tae-yong has called up 27 names to face Bahrain and China in round-robin matches.  <a href="#" class="text-blue-600">Read More...</a></p>
+                    <h2 class="text-sm font-normal leading-5 pt-[11px] md:hidden block">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h2>
                 </div>
-                  <h2 class="text-xl font-bold leading-[30px] pt-5 text-black">Shin Tae-Yong calls up 27 names to face Bahrain and China</h2>
-                  <p class="text-lg font-normal leading-[27px] text-[#8B919E]">Indonesian senior national team coach Shin Tae-yong has called up 27 names to face Bahrain and China in round-robin matches.  <a href="#" class="text-blue-600">Read More...</a></p>
-              </div>
-          </div>
+            </div>
+            <div class="border border-black opacity-30"></div>
 
-      <!-- Card 3 -->
-          <div class="flex items-start gap-[34px] py-[14px]">
-            <img src="/asset/gambarmegawati.jpg" alt="Team photo" class="w-[388px] h-[248px] object-cover">
-              <div>
-                <div class="border-l-4 h-[30px] border-[#00FFF2] pl-[15px]">
-                  <h1 class="text-xl font-normal text-black">Volly Ball</h1>
+            <!-- Card 3 -->
+            <div class="flex items-start gap-[14px] md:gap-[34px]">
+              <img src="/asset/gambarmegawati.jpg" alt="Team photo" class="w-[388px] h-[248px] object-cover hidden md:block">
+              <img src="/asset/badmin.png" alt="photo personal" class="w-[110px] h-[110px] object-cover md:hidden block">
+                <div>
+                  <div class="border-l-4  h-[20px] md:h-[30px] border-[#003BFF] md:border-[#00FFF2] pl-[8px] md:pl-[15px] flex justify-between">
+                    <h1 class="text-xl font-normal text-black hidden md:block">Volly Ball</h1>
+                    <p class="text-sm font-normal md:hidden block">Sport</p>
+                    <p class="text-xs font-normal text-[#BABABA] md:hidden block">Sep.24.2024</p>
+                  </div>
+                    <h2 class="text-xl font-bold leading-[30px] pt-5 text-black hidden md:block">Megawati Hangestri Pertiwi's Golden Moment: Winning Proliga and PON 2024, Now Chasing Title in South Korea</h2>
+                    <p class="text-md font-normal leading-[27px] text-[#8B919E] hidden md:block">Indonesian women's golfer Megawati Hangestri Pertiwi is having some golden moments so far in 2024. After winning the Proliga. <a href="#" class="text-blue-600">Read More...</a></p>
+                    <h2 class="text-sm font-normal leading-5 pt-[11px] md:hidden block">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h2>
                 </div>
-                  <h2 class="text-xl font-bold leading-[30px] pt-5 text-black">Megawati Hangestri Pertiwi's Golden Moment: Winning Proliga and PON 2024, Now Chasing Title in South Korea</h2>
-                  <p class="text-lg font-normal leading-[27px] text-[#8B919E]">Indonesian women's golfer Megawati Hangestri Pertiwi is having some golden moments so far in 2024. After winning the Proliga. <a href="#" class="text-blue-600">Read More...</a></p>
-              </div>
-          </div>
+            </div>
+            <div class="border border-black opacity-30"></div>
 
-      <!-- Card 4 -->
-          <div class="flex items-start gap-[34px] py-[14px]">
-            <img src="/asset/gambar3.png" alt="Team photo" class="w-[388px] h-[248px] object-cover">
-              <div>
-                <div class="border-l-4 h-[30px] border-[#FFA600] pl-[15px]">
-                  <h1 class="text-xl font-normal text-black">G-Esport</h1>
+            <!-- Card 4 -->
+            <div class="flex items-start gap-[14px] md:gap-[34px]">
+              <img src="/asset/gambar3.png" alt="Team photo" class="w-[388px] h-[248px] object-cover hidden md:block">
+              <img src="/asset/badmin.png" alt="photo personal" class="w-[110px] h-[110px] object-cover md:hidden block">
+                <div>
+                  <div class="border-l-4 h-[20px] md:h-[30px] border-[#003BFF] md:border-[#FFA600] pl-[8px] md:pl-[15px] flex justify-between">
+                    <h1 class="text-xl font-normal text-black hidden md:block">G-Esport</h1>
+                    <p class="text-sm font-normal md:hidden block">Sport</p>
+                    <p class="text-xs font-normal text-[#BABABA] md:hidden block">Sep.24.2024</p>
+                  </div>
+                    <h2 class="text-xl font-bold leading-[30px] pt-5 text-black hidden md:block">Final results of PON XXI esports: Jakarta overall champion</h2>
+                    <p class="text-md font-normal leading-[27px] text-[#8B919E] hidden md:block">The esport competition at the XXI Aceh-North Sumatra (North Sumatra) 2024 National Sports Week (PON) has officially ended at <a href="#" class="text-blue-600">Read More...</a></p>
+                    <h2 class="text-sm font-normal leading-5 pt-[11px] md:hidden block">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h2>
                 </div>
-                  <h2 class="text-xl font-bold leading-[30px] pt-5 text-black">Final results of PON XXI esports: Jakarta overall champion</h2>
-                  <p class="text-lg font-normal leading-[27px] text-[#8B919E]">The esport competition at the XXI Aceh-North Sumatra (North Sumatra) 2024 National Sports Week (PON) has officially ended at <a href="#" class="text-blue-600">Read More...</a></p>
-              </div>
+            </div>
           </div>
-    
-          <div class="space-y-6">
-            <h2 class="text-2xl font-bold text-black">Populer <span class="text-2xl font-bold text-red-600">News</span></h2>
+          
+          <div class="space-y-[10px] md:pt-[8px]">
+            <h2 class="text-2xl font-semibold md:font-bold text-black">Populer <span class="text-2xl font-bold text-[#FF0000]">News</span></h2>
+
+            <div class="flex gap-[12px] md:pt-[13px]">
+              <div class="border h-[2px] w-[166px] border-black"></div>
+              <div class="border h-[2px] w-[32px] border-black"></div>
+              <div class="border h-[2px] w-[32px] border-black"></div>
+            </div>
+
+            <!-- Small Card 1 -->
+            <div class="relative h-[167px] md:w-[285px] md:h-[234px]">
+                <img src="/asset/gambarbolaindo.jpg" alt="Riot scene" class="md:pt-[21px] w-full h-full object-cover hidden md:block">
+                <img src="/asset/badmindouble.jpg" alt="badmin" class="w-full h-full object-cover md:hidden block">
+                <div class="absolute bottom-[10px] left-[8px] right-[8px] text-white p-2">
+                    <p class="text-sm font-medium md:text-base md:font-semibold md:leading-[19px]">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter field</p>
+                    <div class="pt-[8px]">
+                      <div class="border-l-4 h-[14px] md:h-[20px] border-[#1A00FF] md:border-[#FF0000] pl-[15px] flex justify-between ">
+                        <span class="text-white text-xs md:text-sm">Football</span>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="border border-black opacity-30 hidden md:block"></div>
   
-      <!-- Small Card 1 -->
-      <div class="relative" style="width: 285px; height: 234px;">
-          <img src="/asset/gambarbolaindo.jpg" alt="Riot scene" class="w-full h-full object-cover">
-          <div class="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white p-2">
-              <p class="text-sm font-semibold">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter field</p>
-              <span class="text-red-400 text-xs">Football</span>
-          </div>
-      </div>
+            <!-- Small Card 2 -->
+            <div class="relative h-[167px] md:w-[285px] md:h-[234px]">
+                <img src="/asset/gambarbadminton.png" alt="Badminton player" class="w-full h-full object-cover hidden md:block">
+                <img src="/asset/badmindouble.jpg" alt="badmin" class="w-full h-full object-cover md:hidden block">
+                <div class="absolute bottom-[10px] left-[8px] right-[8px] text-white p-2">
+                    <p class="text-base font-semibold hidden md:block md:leading-[19px]">Four Indonesian representatives will fight in the quarterfinals of the Macau Open</p>
+                    <p class="text-sm font-medium md:text-base md:font-semibold md:hidden block">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter field</p>
+                    <div class="pt-2 md:pt-4">
+                      <div class="border-l-4 h-[14px] md:h-[20px] border-[#1A00FF] md:border-[#003BFF] pl-[15px] flex justify-between">
+                        <span class="text-white text-sm hidden md:block">Badminton</span>
+                        <span class="text-white text-xs md:text-sm md:hidden block">Football</span>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="border border-black opacity-30 hidden md:block"></div>
   
-      <!-- Small Card 2 -->
-      <div class="relative" style="width: 285px; height: 234px;">
-          <img src="/asset/gambarbadminton.png" alt="Badminton player" class="w-full h-full object-cover">
-          <div class="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white p-2">
-              <p class="text-sm font-semibold">Four Indonesian representatives will fight in the quarterfinals of the Macau Open</p>
-              <span class="text-green-400 text-xs">Badminton</span>
-          </div>
-      </div>
+            <!-- Small Card 3 -->
+            <div class="relative h-[167px] md:w-[285px] md:h-[234px]">
+                <img src="/asset/gambarbolavolly.jpg" alt="Volleyball" class="w-full h-full object-cover hidden md:block">
+                <img src="/asset/badmindouble.jpg" alt="badmin" class="w-full h-full object-cover md:hidden block"> 
+                <div class="absolute bottom-[10px] left-[8px] right-[8px] text-white p-2">
+                    <p class="text-base font-semibold hidden md:block md:leading-[19px]">Full Schedule of the Round of 16 of the 2024 National Police Chief Volleyball Cup, September 25-29, 2024</p>
+                    <p class="text-sm font-medium md:text-base md:font-semibold md:hidden block">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter field</p>
+                    <div class="pt-2 md:pt-4">
+                      <div class="border-l-4 h-[14px] md:h-[20px] border-[#1A00FF] md:border-[#3FFFF5] pl-[15px] flex justify-between">
+                        <span class="text-white text-sm hidden md:block">Volly Ball</span>
+                        <span class="text-white text-xs md:text-sm md:hidden block">Football</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border border-black opacity-30 hidden md:block"></div>
   
-      <!-- Small Card 3 -->
-      <div class="relative" style="width: 285px; height: 234px;">
-          <img src="/asset/gambarbolavolly.jpg" alt="Volleyball" class="w-full h-full object-cover">
-          <div class="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white p-2">
-              <p class="text-sm font-semibold">Full Schedule of the Round of 16 of the 2024 National Police Chief Volleyball Cup, September 25-29, 2024</p>
-              <span class="text-teal-400 text-xs">Volly Ball</span>
+            <!-- Small Card 4 -->
+            <div class="relative h-[167px] md:w-[285px] md:h-[234px]">
+                <img src="/asset/gambare-sport.png" alt="Esport event" class="w-full h-full object-cover hidden md:block">
+              <img src="/asset/badmindouble.jpg" alt="badmin" class="w-full h-full object-cover md:hidden block"> 
+                <div class="absolute bottom-[10px] left-[8px] right-[8px] text-white p-2">
+                    <p class="text-base font-semibold hidden md:block md:leading-[19px]">Three Indonesian teams qualify for the FFWS SEA 2024 Fall Grand Finals</p>
+                    <p class="text-sm font-medium md:text-base md:font-semibold md:hidden block">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter field</p>
+                    <div class="pt-2 md:pt-4">
+                      <div class="border-l-4 h-[14px] md:h-[20px] border-[#1A00FF] md:border-[#FFA600] pl-[15px] flex justify-between">
+                        <span class="text-white text-sm hidden md:block">G-Esport</span>
+                        <span class="text-white text-xs md:text-sm md:hidden block">Football</span>
+                      </div>
+                    </div>
+                </div>
+            </div>
           </div>
-      </div>
-  
-      <!-- Small Card 4 -->
-      <div class="relative" style="width: 285px; height: 234px;">
-          <img src="/asset/gambare-sport.png" alt="Esport event" class="w-full h-full object-cover">
-          <div class="absolute bottom-0 left-0 bg-black bg-opacity-60 text-white p-2">
-              <p class="text-sm font-semibold">Three Indonesian teams qualify for the FFWS SEA 2024 Fall Grand Finals</p>
-              <span class="text-yellow-400 text-xs">G-Esport</span>
-          </div>
-      </div>
-  </div>
+          
   
       </section>
-      
     </main>
     <footer id="site-footer"></footer>
     <script type="module" src="/main.js"></script>
