@@ -10,16 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <title>Vite App</title>
     <style >
-      p{
-        @apply font-bricolage
-      }
-      h1{
-        @apply font-bricolage
-      }
-      span{
-        @apply font-bricolage
-      }
-      a{
+      p, h1, span, a{
         @apply font-bricolage
       }
     </style>
@@ -29,7 +20,7 @@
       <main id="site-main" class="flex flex-col pt-[32px] pb-[40px] pr-[24px] pl-[24px] lg:pt-[60px] lg:pr-[120px] lg:pl-[120px] gap-[20px] lg:gap-[40px]">
         
         <!-- Not Found Messege Section -->
-        <section class="Not-Found-Message flex flex-col p-0 m-0 w-[100px] gap-[24px] justify-center items-center">
+        <section class="Not-Found-Message flex flex-col p-0 m-0 w-[100%] gap-[24px] justify-center items-center">
           <div class="flex flex-col gap-[36px] md:gap-[40px] justify-center items-center">
 
             <h1 class="font-bold text-[28px] leading-[40px] md:text-[50px] md:leading-[70px]">Search result for "Sport"</h1>
@@ -38,16 +29,6 @@
 
           </div>
         </section>
-
-        <!-- Search Result Tittle Section -->
-         <section class="Result-Tittle flex flex-col p-[8px] m-0 w-[100%] gap-[8px] h-auto justify-between">
-
-          <!-- Tittle -->
-          <h1 class="font-bold text-[14px] leading-[19px] md:text-[28px] md:leading-[40px]">Search results: “badminton” found in 6097 documents</h1>
-
-          <hr class="border-[1px] border-gray-400 w-full">
-          
-         </section>
 
       </main>
     <footer id="site-footer"></footer>
