@@ -9,124 +9,214 @@
   <body>
     <header id="site-header"></header>
     <main id="site-main">
-      <section class="mx-[160px] pb-32">
+      <section class="container mx-auto md:max-w-[1200px] sm:max-w-[600px]">
         <div class="flex items-center justify-center text-center">
           <div class="h-[4px] bg-black w-[491px]"></div>
-          <h1 class="text-black text-[40px] font-[600] flex mx-4">
+          <h1 class="text-black lg:text-[40px] text-[30px] font-[600] flex mx-4">
             Hot <span class="ml-2 text-red-600"> News</span>
           </h1>
           <div class="h-[4px] bg-black w-[491px]"></div>
         </div>
 
-        <div class="relative grid items-center grid-cols-2 gap-4 pt-12">
+        <!-- first -->
+        <div
+          class="relative items-center justify-center pt-12 md:gap-4 sm:gap-4 md:flex"
+        >
           <img
             src="/img/main.png"
             alt="Main news"
             class="h-[588px] w-[590px] flex object-cover"
           />
-          <div
-            class="absolute inset-0 flex flex-col justify-end max-w-[570px] p-4"
-          >
-            <h2 class="text-[30px] font-bold text-white">
+          <div class="absolute left-5 md:bottom-8 sm:top-96">
+            <p class="text-[30px] max-w-[540px] font-bold text-white">
               Record Breaking, IShowSpeed Reaches 1 Million Steaming Views in
               Jakarta, Indonesia!
-            </h2>
-            <div class="flex items-center text-sm">
-              <span class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"></span>
+              <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
               <p class="ml-4 text-white text-[18px]">Populer</p>
-            </div>
+            </p>
           </div>
-          <div class="relative flex flex-wrap items-center space-y-5">
+
+
+          <div class="grid gap-5 sm:gap-5 sm:py-5">
             <img
               src="/img/puan.jpeg"
               alt="Small news 1"
-              class="object-cover flex h-[290px] w-[590px]"
+              class="object-cover flex h-[290px] w-[590px] "
             />
-            <div class="absolute p-4 mx-4 bg-black bg-opacity-60 bottom-80">
-              <h2 class="text-[24px] font-bold text-white">
-                Record Breaking, IShowSpeed Reaches 1 Million Steaming Views in
-                Jakarta, Indonesia!
-              </h2>
-              <div class="flex items-center text-sm">
-                <span
-                  class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"
-                ></span>
-                <p class="ml-4 text-white">Populer</p>
-              </div>
+          <div class="absolute pl-4 sm:mt-40">
+              <p
+                class=" text-[24px] font-bold text-white max-w-[570px] "
+              >
+                IShowSpeed Reaches 1 Million Steaming Views in
+                Jakarta, Indonesia! 
+                <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
+                <p class="ml-4 text-white text-[18px]">Populer</p>
+              </p>
             </div>
-
-            <div class="relative grid items-center grid-cols-2 space-x-2">
+            <div class="relative flex gap-5 ">
               <img
                 src="/img/komeng.jpeg"
                 alt="News Thumbnail"
                 class="object-cover flex h-[278px] w-[285px]"
               />
-              <div class="absolute p-4 mx-4 h-[278px] w-[285px] top-32">
-                <h2 class="text-[16px] font-bold text-white">
-                  Record Breaking, IShowSpeed Reaches 1 Million Steaming Views
-                  in Jakarta, Indonesia!
-                </h2>
-                <div class="flex items-center mt-5 text-sm">
-                  <span
-                    class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"
-                  ></span>
-                  <p class="ml-4 text-white">Populer</p>
-                </div>
+              <div class="absolute p-6 top-32">
+                <p
+                class="text-[16px] font-bold text-white max-w-[220px] "
+              >
+              Rice Prices in Indonesia are High but Farmers' Income is Low, What's the Cause?
+              <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
+              <p class="ml-4 text-white text-[18px]">Populer</p>
+              </p>
               </div>
 
-              <div>
+              <div class="relative">
                 <img
-                  src="/img/gamer.png"
-                  alt="News Thumbnail"
-                  class="object-cover flex h-[278px] w-[285px]"
-                />
-                <div class="absolute p-4 mx-4 h-[278px] w-[285px] top-32">
-                  <h2 class="text-[16px] font-bold text-white">
-                    Record Breaking, IShowSpeed Reaches 1 Million Steaming Views
-                    in Jakarta, Indonesia!
-                  </h2>
-                  <div class="flex items-center mt-5 text-sm">
-                    <span
-                      class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"
-                    ></span>
-                    <p class="ml-4 text-white">Populer</p>
-                  </div>
-                </div>
+                src="/img/gamer.png"
+                alt="News Thumbnail"
+                class="object-cover flex h-[278px] w-[285px]"
+              />
+              <div class="absolute p-6 top-32">
+                <p
+                class="text-[16px] font-bold text-white max-w-[220px] "
+              >
+              Rice Prices in Indonesia are High but Farmers' Income is Low, What's the Cause?
+              <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
+              <p class="ml-4 text-white text-[18px]">Populer</p>
+              </p>
+              </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="mx-[160px]">
-        <div class="items-center">
+
+      
+          <div class="items-center justify-center ">
+            <h1 class="text-black text-[40px] font-[600]">
+              Lastest <span class="text-red-600">News </span>
+            </h1>
+            <div class="h-[2px] bg-black w-[244px]"></div>
+          </div>
+          
+        <div class="grid grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+          <div class="py-4">
+            <img src="/img/mpr.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"></span>
+              <p class="flex ml-4 text-black">Politics</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Remind Members of Parliament, Chief Justice: Your Oath Contains
+                Responsibility to the Nation...
+              </h2>
+            </div>
+          </div>
+          <div class="py-4 ">
+            <img src="/img/badminton.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
+              <p class="flex ml-4 text-black">Sports</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Suhandinata Cup 2024: Indonesia wins over Macau in first match
+              </h2>
+            </div>
+          </div>
+          <div class="py-4 ">
+            <img src="/img/polres.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-red-600 mr-2"></span>
+              <p class="flex ml-4 text-black">Disaster</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Police in Blitar City Invited to Improve Kasatkamling to Deal with Disasters
+              </h2>
+            </div>
+          </div>
+          <div class="py-4 ">
+            <img src="/img/gas.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-teal-400 mr-2"></span>
+              <p class="flex ml-4 text-black">Business</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Pertamina's non-subsidized fuel prices will decrease again as of October 2024, here's why
+              </h2>
+            </div>
+          </div>
+          <div class="py-4 ">
+            <img src="/img/satria.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
+              <p class="flex ml-4 text-black">Sport</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[500px]">
+                Things not to do when playing basketball, can be a violation
+              </h2>
+            </div>
+          </div>
+          <div class="py-4 ">
+            <img src="/img/komeng2.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-black mr-2"></span>
+              <p class="flex ml-4 text-black">Politics</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Officially Become DPD Member, Komeng Will Push for National Comedy Day
+              </h2>
+            </div>
+          </div>
+          <div class="py-4 ">
+            <img src="/img/kurnia.png" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-green-400 mr-2"></span>
+              <p class="flex ml-4 text-black">Education</p>
+              <span class="text-[12px] pl-36">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Kurnia's Story, Vocational School Graduate Working on Luxury Cruise Ship, Salary Dozen Million Rupiahs
+              </h2>
+            </div>
+          </div>
+        
+          <div class="py-4 ">
+            <img src="/img/glass.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-orange-400 mr-2"></span>
+              <p class="flex ml-4 text-black">Accident</p>
+              <span class="text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+                Boyolali Police Chief's Car Accident on Kandeman Toll Road, Driver-Attendant Killed
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="items-center justify-center ">
           <h1 class="text-black text-[40px] font-[600]">
-            Latest <span class="text-red-600">News </span>
+            Must <span class="text-red-600">Read </span>
           </h1>
           <div class="h-[2px] bg-black w-[244px]"></div>
         </div>
-
-        <div class="relative items-center pt-5 space-x-2">
-          <div>
-            <img
-              src="/img/mpr.jpeg"
-              alt="News Thumbnail"
-              class="object-cover flex h-[285px] w-[291px]"
-            />
-          </div>
-          <div class="flex items-center mt-5 text-sm">
-            <span class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"></span>
-            <p class="flex ml-4 text-black">Politics</p>
-            <span class="text-[12px] pl-40">Sep.24.2024</span>
-          </div>
-          <div class="pt-1 h-[120px] w-[285px]">
-            <h2 class="text-[20px] font-bold text-black max-w-[290px]">
-              Remind Members of Parliament, Chief Justice: Your Oath Contains
-              Responsibility to the Nation...
-            </h2>
-          </div>
-        </div>
+      
       </section>
+
+   
     </main>
     <footer id="site-footer"></footer>
     <script type="module" src="/main.js"></script>
