@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Bricolage: ['Bricolage','sans-serif'],
+        Bricolage: ['Bricolage Grotesque','sans-serif'],
       }
     },
   },
