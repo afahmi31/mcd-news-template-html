@@ -5,218 +5,642 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="site-header"></header>
     <main id="site-main">
-      <section class="container mx-auto md:max-w-[1200px] sm:max-w-[600px]">
-        <div class="flex items-center justify-center text-center">
+      <!-- hot news -->
+      <section class="container mx-auto">
+        <div class="flex items-center justify-center py-4 text-center">
           <div class="h-[4px] bg-black w-[491px]"></div>
-          <h1 class="text-black lg:text-[40px] text-[30px] font-[600] flex mx-4">
+          <h1
+            class="font-bricolage text-black lg:text-[40px] text-[30px] font-[600] flex mx-4"
+          >
             Hot <span class="ml-2 text-red-600"> News</span>
           </h1>
           <div class="h-[4px] bg-black w-[491px]"></div>
         </div>
 
-        <!-- first -->
         <div
-          class="relative items-center justify-center pt-12 md:gap-4 sm:gap-4 md:flex"
+          class="relative items-center justify-center md:gap-4 sm:gap-4 md:flex"
         >
-          <img
-            src="/img/main.png"
-            alt="Main news"
-            class="h-[588px] w-[590px] flex object-cover"
-          />
-          <div class="absolute left-5 md:bottom-8 sm:top-96">
-            <p class="text-[30px] max-w-[540px] font-bold text-white">
-              Record Breaking, IShowSpeed Reaches 1 Million Steaming Views in
-              Jakarta, Indonesia!
-              <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
-              <p class="ml-4 text-white text-[18px]">Populer</p>
-            </p>
+          <div class="md:w-[50%] relative sm:w-[100%]">
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <img
+              src="/img/main.png"
+              alt="Main news"
+              class="h-[588px] w-full relative flex object-cover"
+            />
+            <div class="absolute left-5 md:bottom-8 sm:top-96">
+              <h3
+                class="font-bricolage text-[30px] max-w-[540px] font-bold text-white"
+              >
+                Record Breaking, IShowSpeed Reaches 1 Million Steaming Views in
+                Jakarta, Indonesia!
+                <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
+                <p class="font-bricolage ml-4 text-white text-[18px]">
+                  Populer
+                </p>
+              </h3>
+            </div>
           </div>
-
 
           <div class="grid gap-5 sm:gap-5 sm:py-5">
             <img
               src="/img/puan.jpeg"
               alt="Small news 1"
-              class="object-cover flex h-[290px] w-[590px] "
+              class="object-cover flex h-[290px] w-[590px]"
             />
-          <div class="absolute pl-4 sm:mt-40">
-              <p
-                class=" text-[24px] font-bold text-white max-w-[570px] "
+            <div class="absolute pl-4 sm:mt-40">
+              <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+              <div></div>
+              <h3
+                class="font-bricolage text-[24px] font-bold text-white max-w-[570px]"
               >
-                IShowSpeed Reaches 1 Million Steaming Views in
-                Jakarta, Indonesia! 
+                IShowSpeed Reaches 1 Million Steaming Views in Jakarta,
+                Indonesia!
                 <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
-                <p class="ml-4 text-white text-[18px]">Populer</p>
-              </p>
+                <p class="font-bricolage ml-4 text-white text-[18px]">
+                  Populer
+                </p>
+              </h3>
             </div>
-            <div class="relative flex gap-5 ">
-              <img
-                src="/img/komeng.jpeg"
-                alt="News Thumbnail"
-                class="object-cover flex h-[278px] w-[285px]"
-              />
+            <div class="relative flex gap-5">
+              <div class="relative">
+                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                <img
+                  src="/img/komeng.jpeg"
+                  alt="News Thumbnail"
+                  class="object-cover flex h-[278px] w-[285px]"
+                />
+              </div>
+
               <div class="absolute p-6 top-32">
-                <p
-                class="text-[16px] font-bold text-white max-w-[220px] "
-              >
-              Rice Prices in Indonesia are High but Farmers' Income is Low, What's the Cause?
-              <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
-              <p class="ml-4 text-white text-[18px]">Populer</p>
-              </p>
+                <h3
+                  class="font-bricolage text-[16px] font-bold text-white max-w-[220px]"
+                >
+                  Rice Prices in Indonesia are High but Farmers' Income is Low,
+                  What's the Cause?
+                  <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
+                  <p class="font-bricolage ml-4 text-white text-[18px]">
+                    Populer
+                  </p>
+                </h3>
               </div>
 
               <div class="relative">
+                <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                 <img
-                src="/img/gamer.png"
-                alt="News Thumbnail"
-                class="object-cover flex h-[278px] w-[285px]"
-              />
-              <div class="absolute p-6 top-32">
-                <p
-                class="text-[16px] font-bold text-white max-w-[220px] "
-              >
-              Rice Prices in Indonesia are High but Farmers' Income is Low, What's the Cause?
-              <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
-              <p class="ml-4 text-white text-[18px]">Populer</p>
-              </p>
-              </div>
+                  src="/img/gamer.png"
+                  alt="News Thumbnail"
+                  class="object-cover flex h-[278px] w-[285px]"
+                />
+                <div class="absolute p-6 top-32">
+                  <h3
+                    class="font-bricolage text-[16px] font-bold text-white max-w-[220px]"
+                  >
+                    Rice Prices in Indonesia are High but Farmers' Income is
+                    Low, What's the Cause?
+                    <div class="absolute h-[27px] w-[4px] bg-yellow-400"></div>
+                    <p class="font-bricolage ml-4 text-white text-[18px]">
+                      Populer
+                    </p>
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-
-      
-          <div class="items-center justify-center ">
-            <h1 class="text-black text-[40px] font-[600]">
+      <!-- lastest news -->
+      <section class="container mx-auto">
+        <div class="flex items-center justify-between py-4">
+          <div class="">
+            <h2 class="font-bricolage text-black text-[40px] font-[600]">
               Lastest <span class="text-red-600">News </span>
-            </h1>
+            </h2>
             <div class="h-[2px] bg-black w-[244px]"></div>
           </div>
-          
-        <div class="grid grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-          <div class="py-4">
-            <img src="/img/mpr.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
-            <div class="flex items-center mt-5 text-sm">
-              <span class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"></span>
-              <p class="flex ml-4 text-black">Politics</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
-            </div>
-            <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+          <a href="#" class="text-[16px] flex h-fit font-bricolage"
+            >See All <img src="/img/Union.svg" alt="" class="px-3"
+          /></a>
+        </div>
+
+        <div
+          class="grid grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <figure class="py-4">
+            <img
+              src="/img/mpr.jpeg"
+              alt="image"
+              class="object-cover flex w-[285px] h-[291px]"
+            />
+            <figcaption class="w-[285px]">
+              <div class="flex items-center justify-between mt-5 text-sm">
+                <div class="flex">
+                  <span
+                    class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"
+                  ></span>
+                  <p class="flex ml-4 text-black font-bricolage">Politics</p>
+                </div>
+                <span class="font-bricolage text-[12px]">Sep.24.2024</span>
+              </div>
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black mt-[14px]"
+              >
                 Remind Members of Parliament, Chief Justice: Your Oath Contains
                 Responsibility to the Nation...
               </h2>
-            </div>
-          </div>
-          <div class="py-4 ">
-            <img src="/img/badminton.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+            </figcaption>
+          </figure>
+          <div class="py-4">
+            <img
+              src="/img/badminton.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
-              <p class="flex ml-4 text-black">Sports</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Sports</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
                 Suhandinata Cup 2024: Indonesia wins over Macau in first match
               </h2>
             </div>
           </div>
-          <div class="py-4 ">
-            <img src="/img/polres.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+          <div class="py-4">
+            <img
+              src="/img/polres.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-red-600 mr-2"></span>
-              <p class="flex ml-4 text-black">Disaster</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Disaster</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
-                Police in Blitar City Invited to Improve Kasatkamling to Deal with Disasters
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Police in Blitar City Invited to Improve Kasatkamling to Deal
+                with Disasters
               </h2>
             </div>
           </div>
-          <div class="py-4 ">
-            <img src="/img/gas.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+          <div class="py-4">
+            <img
+              src="/img/gas.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-teal-400 mr-2"></span>
-              <p class="flex ml-4 text-black">Business</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Business</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
-                Pertamina's non-subsidized fuel prices will decrease again as of October 2024, here's why
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Pertamina's non-subsidized fuel prices will decrease again as of
+                October 2024, here's why
               </h2>
             </div>
           </div>
-          <div class="py-4 ">
-            <img src="/img/satria.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+          <div class="py-4">
+            <img
+              src="/img/satria.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
-              <p class="flex ml-4 text-black">Sport</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Sport</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[500px]">
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[500px]"
+              >
                 Things not to do when playing basketball, can be a violation
               </h2>
             </div>
           </div>
-          <div class="py-4 ">
-            <img src="/img/komeng2.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+          <div class="py-4">
+            <img
+              src="/img/komeng2.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-black mr-2"></span>
-              <p class="flex ml-4 text-black">Politics</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Politics</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
-                Officially Become DPD Member, Komeng Will Push for National Comedy Day
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Officially Become DPD Member, Komeng Will Push for National
+                Comedy Day
               </h2>
             </div>
           </div>
-          <div class="py-4 ">
-            <img src="/img/kurnia.png" alt=""   class="object-cover flex h-[285px] w-[291px]">
+          <div class="py-4">
+            <img
+              src="/img/kurnia.png"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-green-400 mr-2"></span>
-              <p class="flex ml-4 text-black">Education</p>
-              <span class="text-[12px] pl-36">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Education</p>
+              <span class="font-bricolage text-[12px] pl-36">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
-                Kurnia's Story, Vocational School Graduate Working on Luxury Cruise Ship, Salary Dozen Million Rupiahs
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Kurnia's Story, Vocational School Graduate Working on Luxury
+                Cruise Ship, Salary Dozen Million Rupiahs
               </h2>
             </div>
           </div>
-        
-          <div class="py-4 ">
-            <img src="/img/glass.jpeg" alt=""   class="object-cover flex h-[285px] w-[291px]">
+
+          <div class="py-4">
+            <img
+              src="/img/glass.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
             <div class="flex items-center mt-5 text-sm">
               <span class="absolute h-[27px] w-[4px] bg-orange-400 mr-2"></span>
-              <p class="flex ml-4 text-black">Accident</p>
-              <span class="text-[12px] pl-40">Sep.24.2024</span>
+              <p class="flex ml-4 text-black font-bricolage">Accident</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
             </div>
             <div class="pt-1 h-[120px] w-[285px]">
-              <h2 class="text-[20px] font-bold text-black max-w-[290px]">
-                Boyolali Police Chief's Car Accident on Kandeman Toll Road, Driver-Attendant Killed
+              <h2
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Boyolali Police Chief's Car Accident on Kandeman Toll Road,
+                Driver-Attendant Killed
               </h2>
             </div>
           </div>
         </div>
-
-        <div class="items-center justify-center ">
-          <h1 class="text-black text-[40px] font-[600]">
-            Must <span class="text-red-600">Read </span>
-          </h1>
-          <div class="h-[2px] bg-black w-[244px]"></div>
-        </div>
-      
       </section>
 
-   
+      <!-- must read -->
+      <section class="container mx-auto">
+        <div class="items-center justify-center py-4">
+          <h2 class="font-bricolage text-black text-[40px] font-[600]">
+            Must <span class="text-red-600">Read </span>
+          </h2>
+          <div class="h-[2px] bg-black w-[244px]"></div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-[23%]">
+            <img
+              src="/img/dpd.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-full"
+            />
+            <div class="items-center mt-5 text-sm">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Meeting of DPD Leadership Election Heats up, Sultan Argues with
+                La Nyalla
+                <div class="h-[2px] bg-gray-500 w-full my-3"></div>
+                <p class="font-bricolage text-gray-500 text-[16px]">
+                  An earthquake occurred in the Gianyar region of Bali An
+                  earthquake occurred in the Gianyar region of Bali in September
+                  21, 21, 2024.
+                  <span class="text-blue-600 font-bricolage"
+                    >Read More....</span
+                  >
+                </p>
+              </h3>
+              <div class="flex items-center mt-5 text-sm">
+                <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
+                <p class="flex ml-4 text-black font-bricolage">Sports</p>
+                <span class="font-bricolages text-[12px] pl-40"
+                  >Sep.24.2024</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w-[49%] relative">
+            <img
+              src="/img/jokowi.jpeg"
+              alt=""
+              class="object-cover flex h-[592px] w-full object-right"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <div class="absolute items-center text-sm bottom-2 p-[24px]">
+              <h3
+                class="font-bricolage text-[32px] leading-9 font-bold text-white max-w-[500px]"
+              >
+                Jokowi warns to be careful exporting sea sand, only sediment is
+                allowed
+              </h3>
+              <div class="flex items-center mt-5 text-sm">
+                <span
+                  class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"
+                ></span>
+                <p class="flex ml-4 text-white font-bricolage">Populer</p>
+                <span class="font-bricolage text-[12px] text-white pl-[380px]"
+                  >Sep.24.2024</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col w-[29%]">
+            <img
+              src="/img/kpk.jpeg"
+              alt=""
+              class="object-cover flex h-[174px] w-[291px]"
+            />
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-black mr-2"></span>
+              <p class="flex ml-4 text-black font-bricolage">Football</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="items-center mt-5 text-sm">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                This is the list of 10 names that passed the KPK candidates,
+                Johan Budi failed
+              </h3>
+            </div>
+            <div class="h-[2px] bg-gray-500 w-[291px] my-3"></div>
+            <div>
+              <img
+                src="/img/puan.jpeg"
+                alt=""
+                class="object-cover flex h-[174px] w-[291px]"
+              />
+              <div class="flex items-center mt-5 text-sm">
+                <span class="absolute h-[27px] w-[4px] bg-black mr-2"></span>
+                <p class="flex ml-4 text-black font-bricolage">Football</p>
+                <span class="font-bricolage text-[12px] pl-40"
+                  >Sep.24.2024</span
+                >
+              </div>
+              <div class="items-center mt-5 text-sm">
+                <h3
+                  class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+                >
+                  Puan Maharani becomes Speaker of the House again
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- popular news -->
+      <section class="container mx-auto">
+        <div class="flex items-center justify-between py-4">
+          <div class="">
+            <h2 class="font-bricolage text-black text-[40px] font-[600]">
+              Popular <span class="text-red-600">News </span>
+            </h2>
+            <div class="h-[2px] bg-black w-[244px]"></div>
+          </div>
+          <a href="#" class="text-[16px] flex h-fit font-bricolage"
+            >See All <img src="/img/Union.svg" alt="" class="px-3"
+          /></a>
+        </div>
+
+        <div
+          class="grid grid-cols-4 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+          <div class="py-4">
+            <img
+              src="/img/komeng.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-yellow-400 mr-2"></span>
+              <p class="flex ml-4 text-black font-bricolage">Politics</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Komeng's Expression Shouted 'Uhuy' Inside the House of
+                Representatives Building
+              </h3>
+            </div>
+          </div>
+          <div class="py-4">
+            <img
+              src="/img/timnas.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
+              <p class="flex ml-4 text-black font-bricolage">Sports</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Indonesia vs Yemen U-20: Garuda faces toughest test yet
+              </h3>
+            </div>
+          </div>
+          <div class="py-4">
+            <img
+              src="/img/paloh.jpeg"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-red-600 mr-2"></span>
+              <p class="flex ml-4 text-black font-bricolage">Disaster</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Surya Paloh confirms Saan Mustopa as House Leader: We
+                Congratulate
+              </h3>
+            </div>
+          </div>
+          <div class="py-4">
+            <img
+              src="/img/prabowo.png"
+              alt=""
+              class="object-cover flex h-[285px] w-[291px]"
+            />
+            <div class="flex items-center mt-5 text-sm">
+              <span class="absolute h-[27px] w-[4px] bg-teal-400 mr-2"></span>
+              <p class="flex ml-4 text-black font-bricolage">Business</p>
+              <span class="font-bricolage text-[12px] pl-40">Sep.24.2024</span>
+            </div>
+            <div class="pt-1 h-[120px] w-[285px]">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-[290px]"
+              >
+                Rp90 trillion Bekasi-Tangerang sea wall project awaits Prabowo's
+                blessing
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- video news -->
+      <section class="container mx-auto">
+        <div class="items-center justify-center py-4">
+          <h2 class="font-bricolage text-black text-[40px] font-[600]">
+            Video <span class="text-red-600">News </span>
+          </h2>
+          <div class="h-[2px] bg-black w-[244px]"></div>
+        </div>
+
+        <div class="grid grid-cols-2">
+          <div class="flex-col">
+            <div class="flex h-[228px]">
+              <img
+                src="/img/kembangapi.jpeg"
+                alt=""
+                class="object-cover flex h-[228px] w-[238px]"
+              />
+              <div
+                class="justify-center text-sm pl-[9px] py-8 max-w-[340px] items-center"
+              >
+                <h3 class="font-bricolage text-[20px] font-semibold text-black">
+                  M 4.8 Earthquake in Bali September 21, 2024: Analysis of up to
+                  26 Damaged Buildings
+                </h3>
+                <p class="font-bricolage text-gray-500 text-[16px] my-5">
+                  An earthquake occurred in the Gianyar region of Bali September
+                  21, 2024. <span class="text-blue-600">Read More....</span>
+                </p>
+                <div class="flex items-center text-sm">
+                  <span
+                    class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"
+                  ></span>
+                  <p class="flex ml-4 text-black font-bricolage">Sports</p>
+                  <span class="font-bricolage text-[12px] pl-40"
+                    >Sep.24.2024</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="h-[1px] bg-gray-400 w-[578px] my-2"></div>
+            <div class="flex h-[228px]">
+              <img
+                src="/img/badminton2.jpeg"
+                alt=""
+                class="object-cover flex h-[228px] w-[238px]"
+              />
+              <div
+                class="justify-center text-sm pl-[9px] py-8 max-w-[340px] items-center"
+              >
+                <h3 class="font-bricolage text-[20px] font-semibold text-black">
+                  M 4.8 Earthquake in Bali September 21, 2024: Analysis of up to
+                  26 Damaged Buildings
+                </h3>
+                <p class="font-bricolage text-gray-500 text-[16px] my-5">
+                  An earthquake occurred in the Gianyar region of Bali September
+                  21, 2024. <span class="text-blue-600">Read More....</span>
+                </p>
+                <div class="flex items-center text-sm">
+                  <span
+                    class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"
+                  ></span>
+                  <p class="flex ml-4 text-black font-bricolage">Sports</p>
+                  <span class="font-bricolage text-[12px] pl-40"
+                    >Sep.24.2024</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="h-[2px] bg-gray-400 w-[578px] my-2"></div>
+            <div class="flex h-[228px]">
+              <img
+                src="/img/atlet.jpeg"
+                alt=""
+                class="object-cover flex h-[228px] w-[238px]"
+              />
+              <div
+                class="justify-center text-sm pl-[9px] py-8 max-w-[340px] items-center"
+              >
+                <h3 class="font-bricolage text-[20px] font-semibold text-black">
+                  M 4.8 Earthquake in Bali September 21, 2024: Analysis of up to
+                  26 Damaged Buildings
+                </h3>
+                <p class="font-bricolage text-gray-500 text-[16px] my-5">
+                  An earthquake occurred in the Gianyar region of Bali September
+                  21, 2024. <span class="text-blue-600">Read More....</span>
+                </p>
+                <div class="flex items-center text-sm">
+                  <span
+                    class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"
+                  ></span>
+                  <p class="flex ml-4 text-black font-bricolage">Sports</p>
+                  <span class="font-bricolage text-[12px] pl-40"
+                    >Sep.24.2024</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-[556px]">
+            <img
+              src="/img/atlet2.jpeg"
+              alt=""
+              class="object-cover flex h-[449px] w-[556px]"
+            />
+            <div class="items-center mt-5 text-sm">
+              <h3
+                class="font-bricolage text-[20px] font-semibold text-black max-w-full"
+              >
+                M 4.8 Earthquake in Bali September 21, 2024: Analysis of up to
+                26 Damaged Buildings
+                <div class="h-[2px] bg-gray-500 w-full my-3"></div>
+                <p class="font-bricolage text-gray-500 text-[16px]">
+                  An earthquake occurred in the Gianyar region of Bali September
+                  21, 2024.
+                  <span class="text-blue-600 font-bricolage"
+                    >Read More....</span
+                  >
+                </p>
+              </h3>
+              <div class="flex items-center mt-5 text-sm">
+                <span class="absolute h-[27px] w-[4px] bg-blue-700 mr-2"></span>
+                <p class="flex ml-4 text-black font-bricolage">Sports</p>
+                <span class="font-bricolage text-[12px] pl-40"
+                  >Sep.24.2024</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="site-footer"></footer>
     <script type="module" src="/main.js"></script>
