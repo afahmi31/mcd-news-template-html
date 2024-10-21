@@ -8,77 +8,252 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Vite App</title>
     <style >
-      p, h1, span, a{
+      h1, span{
         @apply font-bricolage
+      }
+      p, a{
+        @apply font-inter
       }
     </style>
   </head>
   <body>
     <header id="site-header"></header>
-      <main id="site-main" class="flex flex-col pt-[32px] pb-[40px] pr-[24px] pl-[24px] lg:pt-[50px] lg:pr-[100px] lg:pl-[100px] xl:pt-[50px] xl:pr-[120px] xl:pl-[120px] gap-[40px] lg:gap-[60px]">
+      <main id="site-main" class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-0 xl:px-6 flex flex-col pt-8 pb-10 md:pt-10 md:pb-10 lg:pt-16 lg:pb-16 gap-[36px] lg:gap-[64px]">
         
         <!-- Search Tittle Section -->
-         <section class="Found-Message flex flex-col p-0 m-0 w-[100%] gap-[8px] justify-between items-start">
-          <div class="p-[8px] m-0 w-[100%]">
-            <h1 class="font-bold text-[14px] leading-[20px] md:text-[28px] md:leading-[40px]">Search result for "Sport"</h1>
+         <section class="Found-Message flex flex-col">
+          <div class="p-[8px] border-b-[1px] border-[#CECECE]">
+            <h1 class="font-bold text-[14px] leading-[20px] md:text-[23px] md:leading-[30px] lg:text-[32px] lg:leading-[40px]">Search results: “badminton” found in 6097 documents</h1>
           </div>
-          <hr class="border-[1px] border-gray-300 w-full">
          </section>
 
         <!-- List Result Search -->
-         <section class="List-result flex flex-col p-0 m-0 w-[100%] gap-[12px] justify-between">
-          <div class="gap-[24px] flex flex-col w-[100%]">
+         <section class="List-result flex flex-col gap-[90px] justify-between">
+          <div class="flex flex-col w-[100%]">
 
             <!-- Template List Looping -->
-            <a href="">
-            <div class="flex flex-col w-[100%] h-auto gap-[12px] md:gap-[20px]">
-              <div class="w-[100%] h-auto md:h-auto flex flex-col">
+            <a href="" style="width: 32;">
+            <div class="flex flex-col gap-[14px]">
+              <div class="w-[100%] h-auto flex flex-col">
 
                 <!-- Feature Image -->
-                <div class="flex flex-col md:flex-row gap-[12px] md:gap-[34px]">
-                  <div class="w-[100%] md:w-[40%] h-auto">
+                <div class="flex flex-col md:flex-row gap-[12px] lg:gap-[34px]">
+
+                  <div class="w-[100%] h-auto">
                     <figure>
-                      <img src="public/460e5e69457ee636d9526abf31d76622.png" alt="FeatureImagePost" class="w-full h-auto md:h-auto max-h-[248px] ">
+                      <img src="/Badminton.png" alt="Feature Image Post" class="object-cover w-full h-[165px] md:h-[206px] lg:h-[248px]">
                     </figure>
                   </div>
   
                   <!-- Looping Content -->
-                  <div class="w-[100%] md:w-[60%] h-full flex flex-col gap-[12px] md:gap-[40px] md:pt-[10px] md:pb-[10px] xl:pt-[20px] xl:pb-[20px]">
+                  <div class="w-[100%] md:w-[68%] flex flex-col gap-[12px] md:gap-[26px] lg:gap-[40px] justify-center">
   
                     <!-- Category & Date -->
-                    <div class="flex flex-row justify-between items-center">
-                      <div class="gap-[12px] w-full justify-start items-center flex flex-row">
-                        <div class="border-[2px] border-black h-[20px]"></div>
-                        <p class="text-[14px] md:text-[24px] font-normal leading-[14px] md:leading-[24px] text-black">Sports</p>
+                     <div class="flex flex-row justify-between items-center">
+                      <div class="gap-[15px] w-full justify-start items-center flex flex-row">
+                        <div class="border-[2px] border-black h-[20px] lg:h-[30px]"></div>
+                        <span class="font-normal text-[14px] md:text-[19px] lg:text-[24px] leading-[14px] md:leading-[19px] lg:leading-[24px]">Sports</span>
                       </div>
-                      <p class="text-[10px] md:text-[16px] font-normal leading-[10px] md:leading-[16px] text-[#BABABA]">Sep.24.2024</p>
+                      <span class="text-[10px] md:text-[13px] lg:text-[16px] font-normal leading-[10px] md:leading-[13px] lg:leading-[16px] text-[#BABABA]">Sep.24.2024</span>
                     </div>
                     
                     <!-- Content -->
-                    <div class="flex flex-col gap-[12px] md:gap-[21px]">
+                    <div class="flex flex-col gap-[12px] lg:gap-[21px]">
                       <!-- Post Tittle -->
-                      <h1 class="font-bold text-[12px] md:text-[20px] leading-[16px] md:leading-[30px]">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h1>
+                      <h1 class="font-bold text-[12px] lg:text-[24px] leading-[14px] md:leading-[18px] lg:leading-[32px]">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h1>
   
                       <!-- ?????? -->
-                      <p class="font-normal text-[10px] leading-[13px] md:text-[18px] md:leading-[27px] text-[]">
-                        Pebulu tangkis Jawa Tengah Richie Duta Ricardo mengembalikan kok saat bertanding melawan pebulu tangkis Jakarta Rizki Dwi Cahyo pada final bulu tangkis beregu putra PON XXI 
-                        <span>
+                      <p class="font-normal text-[12px] leading-[14px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[28px] text-[#8B919E]">
+                        Pebulu tangkis Jawa Tengah Richie Duta Ricardo mengembalikan kok saat bertanding melawan kok saat bertanding melawan kok saat bertanding melawan
                           <a href="#" class="read-more-link text-blue-700">Read More ...</a>
-                        </span>
                       </p>
                     </div>
                     
                   </div>
+
                   </div>
-  
+
               </div>
+
               <hr class="border-[1px] border-gray-400 w-full">
+
             </div>
             </a>
 
+            <a href="" style="width: 32;">
+              <div class="flex flex-col gap-[14px]">
+                <div class="w-[100%] h-auto flex flex-col">
+  
+                  <!-- Feature Image -->
+                  <div class="flex flex-col md:flex-row gap-[12px] lg:gap-[34px]">
+  
+                    <div class="w-[100%] h-auto">
+                      <figure>
+                        <img src="/Badminton.png" alt="Feature Image Post" class="object-cover w-full h-[165px] md:h-[206px] lg:h-[248px]">
+                      </figure>
+                    </div>
+    
+                    <!-- Looping Content -->
+                    <div class="w-[100%] md:w-[68%] flex flex-col gap-[12px] md:gap-[26px] lg:gap-[40px] justify-center">
+    
+                      <!-- Category & Date -->
+                       <div class="flex flex-row justify-between items-center">
+                        <div class="gap-[15px] w-full justify-start items-center flex flex-row">
+                          <div class="border-[2px] border-black h-[20px] lg:h-[30px]"></div>
+                          <span class="font-normal text-[14px] md:text-[19px] lg:text-[24px] leading-[14px] md:leading-[19px] lg:leading-[24px]">Sports</span>
+                        </div>
+                        <span class="text-[10px] md:text-[13px] lg:text-[16px] font-normal leading-[10px] md:leading-[13px] lg:leading-[16px] text-[#BABABA]">Sep.24.2024</span>
+                      </div>
+                      
+                      <!-- Content -->
+                      <div class="flex flex-col gap-[12px] lg:gap-[21px]">
+                        <!-- Post Tittle -->
+                        <h1 class="font-bold text-[12px] lg:text-[24px] leading-[14px] md:leading-[18px] lg:leading-[32px]">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h1>
+    
+                        <!-- ?????? -->
+                        <p class="font-normal text-[12px] leading-[14px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[28px] text-[#8B919E]">
+                          Pebulu tangkis Jawa Tengah Richie Duta Ricardo mengembalikan kok saat bertanding melawan kok saat bertanding melawan kok saat bertanding melawan
+                            <a href="#" class="read-more-link text-blue-700">Read More ...</a>
+                        </p>
+                      </div>
+                      
+                    </div>
+  
+                    </div>
+  
+                </div>
+  
+                <hr class="border-[1px] border-gray-400 w-full">
+                
+              </div>
+            </a>
+
+            <a href="" style="width: 32;">
+              <div class="flex flex-col gap-[14px]">
+                <div class="w-[100%] h-auto flex flex-col">
+
+                  <!-- Feature Image -->
+                  <div class="flex flex-col md:flex-row gap-[12px] lg:gap-[34px]">
+
+                    <div class="w-[100%] h-auto">
+                      <figure>
+                        <img src="/Badminton.png" alt="Feature Image Post" class="object-cover w-full h-[165px] md:h-[206px] lg:h-[248px]">
+                      </figure>
+                    </div>
+
+                    <!-- Looping Content -->
+                    <div class="w-[100%] md:w-[68%] flex flex-col gap-[12px] md:gap-[26px] lg:gap-[40px] justify-center">
+
+                      <!-- Category & Date -->
+                        <div class="flex flex-row justify-between items-center">
+                        <div class="gap-[15px] w-full justify-start items-center flex flex-row">
+                          <div class="border-[2px] border-black h-[20px] lg:h-[30px]"></div>
+                          <span class="font-normal text-[14px] md:text-[19px] lg:text-[24px] leading-[14px] md:leading-[19px] lg:leading-[24px]">Sports</span>
+                        </div>
+                        <span class="text-[10px] md:text-[13px] lg:text-[16px] font-normal leading-[10px] md:leading-[13px] lg:leading-[16px] text-[#BABABA]">Sep.24.2024</span>
+                      </div>
+                      
+                      <!-- Content -->
+                      <div class="flex flex-col gap-[12px] lg:gap-[21px]">
+                        <!-- Post Tittle -->
+                        <h1 class="font-bold text-[12px] lg:text-[24px] leading-[14px] md:leading-[18px] lg:leading-[32px]">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h1>
+
+                        <!-- ?????? -->
+                        <p class="font-normal text-[12px] leading-[14px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[28px] text-[#8B919E]">
+                          Pebulu tangkis Jawa Tengah Richie Duta Ricardo mengembalikan kok saat bertanding melawan kok saat bertanding melawan kok saat bertanding melawan
+                            <a href="#" class="read-more-link text-blue-700">Read More ...</a>
+                        </p>
+                      </div>
+                      
+                    </div>
+
+                    </div>
+
+                </div>
+
+                <hr class="border-[1px] border-gray-400 w-full">
+                
+              </div>
+            </a>
+
+            <a href="" style="width: 32;">
+              <div class="flex flex-col gap-[14px]">
+                <div class="w-[100%] h-auto flex flex-col">
+  
+                  <!-- Feature Image -->
+                  <div class="flex flex-col md:flex-row gap-[12px] lg:gap-[34px]">
+  
+                    <div class="w-[100%] h-auto">
+                      <figure>
+                        <img src="/Badminton.png" alt="Feature Image Post" class="object-cover w-full h-[165px] md:h-[206px] lg:h-[248px]">
+                      </figure>
+                    </div>
+    
+                    <!-- Looping Content -->
+                    <div class="w-[100%] md:w-[68%] flex flex-col gap-[12px] md:gap-[26px] lg:gap-[40px] justify-center">
+    
+                      <!-- Category & Date -->
+                        <div class="flex flex-row justify-between items-center">
+                        <div class="gap-[15px] w-full justify-start items-center flex flex-row">
+                          <div class="border-[2px] border-black h-[20px] lg:h-[30px]"></div>
+                          <span class="font-normal text-[14px] md:text-[19px] lg:text-[24px] leading-[14px] md:leading-[19px] lg:leading-[24px]">Sports</span>
+                        </div>
+                        <span class="text-[10px] md:text-[13px] lg:text-[16px] font-normal leading-[10px] md:leading-[13px] lg:leading-[16px] text-[#BABABA]">Sep.24.2024</span>
+                      </div>
+                      
+                      <!-- Content -->
+                      <div class="flex flex-col gap-[12px] lg:gap-[21px]">
+                        <!-- Post Tittle -->
+                        <h1 class="font-bold text-[12px] lg:text-[24px] leading-[14px] md:leading-[18px] lg:leading-[32px]">Harga Beras di Indonesia Mahal tapi Pendapatan Petani Rendah, Apa Penyebabnya?</h1>
+    
+                        <!-- ?????? -->
+                        <p class="font-normal text-[12px] leading-[14px] md:text-[14px] md:leading-[16px] lg:text-[16px] lg:leading-[28px] text-[#8B919E]">
+                          Pebulu tangkis Jawa Tengah Richie Duta Ricardo mengembalikan kok saat bertanding melawan kok saat bertanding melawan kok saat bertanding melawan
+                            <a href="#" class="read-more-link text-blue-700">Read More ...</a>
+                        </p>
+                      </div>
+                      
+                    </div>
+  
+                    </div>
+  
+                </div>
+  
+                <hr class="border-[1px] border-gray-400 w-full">
+                
+              </div>
+            </a>
+
           </div>
+
+          <div class="pagination flex flex-row gap-[12px] justify-center items-center">
+            <!-- Previous Button -->
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md text-[#777777] hover:bg-[#3E86DD] hover:text-white">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        
+            <!-- Page Numbers -->
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md bg-[#3E86DD] text-white font-bold hover:bg-blue-600"><span class="text-[24px] font-normal">1</span></a>
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md text-[#777777] hover:bg-[#3E86DD] hover:text-white"><span class="text-[24px] font-normal">2</span></a>
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md text-[#777777] hover:bg-[#3E86DD] hover:text-white"><span class="text-[24px] font-normal">3</span></a>
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md text-[#777777] hover:bg-[#3E86DD] hover:text-white"><span class="text-[24px] font-normal">4</span></a>
+        
+            <!-- Dots -->
+            <p class="w-[32px] h-[32px] flex justify-center items-center text-[#777777]">...</p>
+        
+            <!-- Last Page Number -->
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md text-[#777777] hover:bg-[#3E86DD] hover:text-white"><span class="text-[24px] font-normal">610</span></a>
+        
+            <!-- Next Button -->
+            <a href="#" class="w-[32px] h-[32px] flex justify-center items-center rounded-md text-[#777777] hover:bg-[#3E86DD] hover:text-white">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+
          </section>
       </main>
     <footer id="site-footer"></footer>

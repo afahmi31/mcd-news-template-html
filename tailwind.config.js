@@ -7,19 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'bricolage': ['"Bricolage Grotesque"', 'sans-serif'], // Menambahkan font baru
+        'inter': ['Inter', 'sans-serif'], 
+        'bricolage': ['"Bricolage Grotesque"', 'sans-serif'], 
       },
     },
   },
   plugins: [],
 }
-
-
-
-
-
-
-
-
-
-
