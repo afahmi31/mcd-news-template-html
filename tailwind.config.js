@@ -7,6 +7,7 @@ export default {
     extend: {
       fontFamily: {
         Bricolage: ['Bricolage Grotesque','sans-serif'],
+        Inter: ['Inter'],
       }
     },
   },
