@@ -10,9 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style >
-        a, h1, h2, span, button{
+        a, h1, h2, span, ::placeholder{
           @apply font-bricolage !important
+        }
+        button{
+          @apply font-inter !important
         }
         #mobile-menu {
             display: none;
@@ -42,74 +48,88 @@
   <body>
     <header class="bg-black text-white w-full min-w-full mx-0 px-0">
       <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-2">
-        <div class="flex space-x-[2px] lg:space-x-[10px] ">
-            <!-- LinkedIn -->
-            <a href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                    <rect y="0.5" width="24" height="24" rx="6" fill="white"/>
-                    <path d="M8.7 18.5H6.15V10.475H8.7V18.5ZM7.425 9.35C6.6 9.35 6 8.75 6 7.925C6 7.1 6.675 6.5 7.425 6.5C8.25 6.5 8.85 7.1 8.85 7.925C8.85 8.75 8.25 9.35 7.425 9.35ZM18 18.5H15.45V14.15C15.45 12.875 14.925 12.5 14.175 12.5C13.425 12.5 12.675 13.1 12.675 14.225V18.5H10.125V10.475H12.525V11.6C12.75 11.075 13.65 10.25 14.925 10.25C16.35 10.25 17.85 11.075 17.85 13.55V18.5H18Z" fill="#050810"/>
+        <ul class="flex space-x-[2px] lg:space-x-[10px] ">
+          <!-- LinkedIn -->
+          <li>
+              <a href="#" target="_blank" class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <rect y="0.5" width="24" height="24" rx="6" fill="white"/>
+                      <path d="M8.7 18.5H6.15V10.475H8.7V18.5ZM7.425 9.35C6.6 9.35 6 8.75 6 7.925C6 7.1 6.675 6.5 7.425 6.5C8.25 6.5 8.85 7.1 8.85 7.925C8.85 8.75 8.25 9.35 7.425 9.35ZM18 18.5H15.45V14.15C15.45 12.875 14.925 12.5 14.175 12.5C13.425 12.5 12.675 13.1 12.675 14.225V18.5H10.125V10.475H12.525V11.6C12.75 11.075 13.65 10.25 14.925 10.25C16.35 10.25 17.85 11.075 17.85 13.55V18.5H18Z" fill="#050810"/>
                   </svg>
-            </a>
-            <!-- FB -->
-            <a href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                    <rect y="0.5" width="24" height="24" rx="5" fill="white"/>
-                    <path d="M18 12.5C18 9.2 15.3 6.5 12 6.5C8.7 6.5 6 9.2 6 12.5C6 15.5 8.175 17.975 11.025 18.425V14.225H9.525V12.5H11.025V11.15C11.025 9.65 11.925 8.825 13.275 8.825C13.95 8.825 14.625 8.975 14.625 8.975V10.475H13.875C13.125 10.475 12.9 10.925 12.9 11.375V12.5H14.55L14.25 14.225H12.825V18.5C15.825 18.05 18 15.5 18 12.5Z" fill="#050810"/>
+              </a>
+          </li>
+          <!-- FB -->
+          <li>
+              <a href="#" target="_blank" class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <rect y="0.5" width="24" height="24" rx="5" fill="white"/>
+                      <path d="M18 12.5C18 9.2 15.3 6.5 12 6.5C8.7 6.5 6 9.2 6 12.5C6 15.5 8.175 17.975 11.025 18.425V14.225H9.525V12.5H11.025V11.15C11.025 9.65 11.925 8.825 13.275 8.825C13.95 8.825 14.625 8.975 14.625 8.975V10.475H13.875C13.125 10.475 12.9 10.925 12.9 11.375V12.5H14.55L14.25 14.225H12.825V18.5C15.825 18.05 18 15.5 18 12.5Z" fill="#050810"/>
                   </svg>
-            </a>
-            <!-- Ig -->
-            <a href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                    <rect y="0.5" width="24" height="24" rx="6" fill="white"/>
-                    <path d="M12.0004 7.40039C13.6504 7.40039 13.8754 7.40039 14.5504 7.40039C15.1504 7.40039 15.4504 7.55039 15.6754 7.62539C15.9754 7.77539 16.2004 7.85039 16.4254 8.07539C16.6504 8.30039 16.8004 8.52539 16.8754 8.82539C16.9504 9.05039 17.0254 9.35039 17.1004 9.95039C17.1004 10.6254 17.1004 10.7754 17.1004 12.5004C17.1004 14.2254 17.1004 14.3754 17.1004 15.0504C17.1004 15.6504 16.9504 15.9504 16.8754 16.1754C16.7254 16.4754 16.6504 16.7004 16.4254 16.9254C16.2004 17.1504 15.9754 17.3004 15.6754 17.3754C15.4504 17.4504 15.1504 17.5254 14.5504 17.6004C13.8754 17.6004 13.7254 17.6004 12.0004 17.6004C10.2754 17.6004 10.1254 17.6004 9.45039 17.6004C8.85039 17.6004 8.55039 17.4504 8.32539 17.3754C8.02539 17.2254 7.80039 17.1504 7.57539 16.9254C7.35039 16.7004 7.20039 16.4754 7.12539 16.1754C7.05039 15.9504 6.97539 15.6504 6.90039 15.0504C6.90039 14.3754 6.90039 14.2254 6.90039 12.5004C6.90039 10.7754 6.90039 10.6254 6.90039 9.95039C6.90039 9.35039 7.05039 9.05039 7.12539 8.82539C7.27539 8.52539 7.35039 8.30039 7.57539 8.07539C7.80039 7.85039 8.02539 7.70039 8.32539 7.62539C8.55039 7.55039 8.85039 7.47539 9.45039 7.40039C10.1254 7.40039 10.3504 7.40039 12.0004 7.40039ZM12.0004 6.27539C10.2754 6.27539 10.1254 6.27539 9.45039 6.27539C8.77539 6.27539 8.32539 6.42539 7.95039 6.57539C7.57539 6.72539 7.20039 6.95039 6.82539 7.32539C6.45039 7.70039 6.30039 8.00039 6.07539 8.45039C5.92539 8.82539 5.85039 9.27539 5.77539 9.95039C5.77539 10.6254 5.77539 10.8504 5.77539 12.5004C5.77539 14.2254 5.77539 14.3754 5.77539 15.0504C5.77539 15.7254 5.92539 16.1754 6.07539 16.5504C6.22539 16.9254 6.45039 17.3004 6.82539 17.6754C7.20039 18.0504 7.50039 18.2004 7.95039 18.4254C8.32539 18.5754 8.77539 18.6504 9.45039 18.7254C10.1254 18.7254 10.3504 18.7254 12.0004 18.7254C13.6504 18.7254 13.8754 18.7254 14.5504 18.7254C15.2254 18.7254 15.6754 18.5754 16.0504 18.4254C16.4254 18.2754 16.8004 18.0504 17.1754 17.6754C17.5504 17.3004 17.7004 17.0004 17.9254 16.5504C18.0754 16.1754 18.1504 15.7254 18.2254 15.0504C18.2254 14.3754 18.2254 14.1504 18.2254 12.5004C18.2254 10.8504 18.2254 10.6254 18.2254 9.95039C18.2254 9.27539 18.0754 8.82539 17.9254 8.45039C17.7754 8.07539 17.5504 7.70039 17.1754 7.32539C16.8004 6.95039 16.5004 6.80039 16.0504 6.57539C15.6754 6.42539 15.2254 6.35039 14.5504 6.27539C13.8754 6.27539 13.7254 6.27539 12.0004 6.27539Z" fill="#050810"/>
-                    <path d="M12.0004 9.27539C10.2004 9.27539 8.77539 10.7004 8.77539 12.5004C8.77539 14.3004 10.2004 15.7254 12.0004 15.7254C13.8004 15.7254 15.2254 14.3004 15.2254 12.5004C15.2254 10.7004 13.8004 9.27539 12.0004 9.27539ZM12.0004 14.6004C10.8754 14.6004 9.90039 13.7004 9.90039 12.5004C9.90039 11.3754 10.8004 10.4004 12.0004 10.4004C13.1254 10.4004 14.1004 11.3004 14.1004 12.5004C14.1004 13.6254 13.1254 14.6004 12.0004 14.6004Z" fill="#050810"/>
-                    <path d="M15.3004 9.95039C15.7146 9.95039 16.0504 9.6146 16.0504 9.20039C16.0504 8.78618 15.7146 8.45039 15.3004 8.45039C14.8862 8.45039 14.5504 8.78618 14.5504 9.20039C14.5504 9.6146 14.8862 9.95039 15.3004 9.95039Z" fill="#050810"/>
+              </a>
+          </li>
+          <!-- Ig -->
+          <li>
+              <a href="#" target="_blank" class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <rect y="0.5" width="24" height="24" rx="6" fill="white"/>
+                      <path d="M12.0004 7.40039C13.6504 7.40039 13.8754 7.40039 14.5504 7.40039C15.1504 7.40039 15.4504 7.55039 15.6754 7.62539C15.9754 7.77539 16.2004 7.85039 16.4254 8.07539C16.6504 8.30039 16.8004 8.52539 16.8754 8.82539C16.9504 9.05039 17.0254 9.35039 17.1004 9.95039C17.1004 10.6254 17.1004 10.7754 17.1004 12.5004C17.1004 14.2254 17.1004 14.3754 17.1004 15.0504C17.1004 15.6504 16.9504 15.9504 16.8754 16.1754C16.7254 16.4754 16.6504 16.7004 16.4254 16.9254C16.2004 17.1504 15.9754 17.3004 15.6754 17.3754C15.4504 17.4504 15.1504 17.5254 14.5504 17.6004C13.8754 17.6004 13.7254 17.6004 12.0004 17.6004C10.2754 17.6004 10.1254 17.6004 9.45039 17.6004C8.85039 17.6004 8.55039 17.4504 8.32539 17.3754C8.02539 17.2254 7.80039 17.1504 7.57539 16.9254C7.35039 16.7004 7.20039 16.4754 7.12539 16.1754C7.05039 15.9504 6.97539 15.6504 6.90039 15.0504C6.90039 14.3754 6.90039 14.2254 6.90039 12.5004C6.90039 10.7754 6.90039 10.6254 6.90039 9.95039C6.90039 9.35039 7.05039 9.05039 7.12539 8.82539C7.27539 8.52539 7.35039 8.30039 7.57539 8.07539C7.80039 7.85039 8.02539 7.70039 8.32539 7.62539C8.55039 7.55039 8.85039 7.47539 9.45039 7.40039C10.1254 7.40039 10.3504 7.40039 12.0004 7.40039ZM12.0004 6.27539C10.2754 6.27539 10.1254 6.27539 9.45039 6.27539C8.77539 6.27539 8.32539 6.42539 7.95039 6.57539C7.57539 6.72539 7.20039 6.95039 6.82539 7.32539C6.45039 7.70039 6.30039 8.00039 6.07539 8.45039C5.92539 8.82539 5.85039 9.27539 5.77539 9.95039C5.77539 10.6254 5.77539 10.8504 5.77539 12.5004C5.77539 14.2254 5.77539 14.3754 5.77539 15.0504C5.77539 15.7254 5.92539 16.1754 6.07539 16.5504C6.22539 16.9254 6.45039 17.3004 6.82539 17.6754C7.20039 18.0504 7.50039 18.2004 7.95039 18.4254C8.32539 18.5754 8.77539 18.6504 9.45039 18.7254C10.1254 18.7254 10.3504 18.7254 12.0004 18.7254C13.6504 18.7254 13.8754 18.7254 14.5504 18.7254C15.2254 18.7254 15.6754 18.5754 16.0504 18.4254C16.4254 18.2754 16.8004 18.0504 17.1754 17.6754C17.5504 17.3004 17.7004 17.0004 17.9254 16.5504C18.0754 16.1754 18.1504 15.7254 18.2254 15.0504C18.2254 14.3754 18.2254 14.1504 18.2254 12.5004C18.2254 10.8504 18.2254 10.6254 18.2254 9.95039C18.2254 9.27539 18.0754 8.82539 17.9254 8.45039C17.7754 8.07539 17.5504 7.70039 17.1754 7.32539C16.8004 6.95039 16.5004 6.80039 16.0504 6.57539C15.6754 6.42539 15.2254 6.35039 14.5504 6.27539C13.8754 6.27539 13.7254 6.27539 12.0004 6.27539Z" fill="#050810"/>
+                      <path d="M12.0004 9.27539C10.2004 9.27539 8.77539 10.7004 8.77539 12.5004C8.77539 14.3004 10.2004 15.7254 12.0004 15.7254C13.8004 15.7254 15.2254 14.3004 15.2254 12.5004C15.2254 10.7004 13.8004 9.27539 12.0004 9.27539ZM12.0004 14.6004C10.8754 14.6004 9.90039 13.7004 9.90039 12.5004C9.90039 11.3754 10.8004 10.4004 12.0004 10.4004C13.1254 10.4004 14.1004 11.3004 14.1004 12.5004C14.1004 13.6254 13.1254 14.6004 12.0004 14.6004Z" fill="#050810"/>
+                      <path d="M15.3004 9.95039C15.7146 9.95039 16.0504 9.6146 16.0504 9.20039C16.0504 8.78618 15.7146 8.45039 15.3004 8.45039C14.8862 8.45039 14.5504 8.78618 14.5504 9.20039C14.5504 9.6146 14.8862 9.95039 15.3004 9.95039Z" fill="#050810"/>
                   </svg>
-            </a>
-            <!-- Dribbble -->
-            <a href="#" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                    <rect y="0.5" width="24" height="24" rx="6" fill="white"/>
-                    <path d="M12 6.5C8.688 6.5 6 9.188 6 12.5C6 15.812 8.688 18.5 12 18.5C15.3 18.5 18 15.812 18 12.5C18 9.188 15.3 6.5 12 6.5ZM15.96 9.26C16.68 10.136 17.1 11.24 17.124 12.452C16.956 12.416 15.264 12.08 13.56 12.284C13.524 12.2 13.488 12.104 13.452 12.02C13.344 11.768 13.236 11.516 13.116 11.276C14.988 10.52 15.852 9.404 15.96 9.26ZM12 7.388C13.296 7.388 14.496 7.88 15.396 8.672C15.3 8.804 14.532 9.836 12.708 10.52C11.868 8.972 10.932 7.712 10.8 7.52C11.184 7.436 11.58 7.388 12 7.388ZM9.816 7.868C9.948 8.048 10.86 9.32 11.712 10.832C9.312 11.468 7.2 11.456 6.972 11.456C7.32 9.86 8.388 8.54 9.816 7.868ZM6.876 12.512C6.876 12.464 6.876 12.404 6.876 12.356C7.092 12.368 9.588 12.392 12.144 11.624C12.288 11.912 12.432 12.2 12.564 12.5C12.504 12.524 12.432 12.536 12.36 12.56C9.72 13.412 8.316 15.74 8.196 15.932C7.368 15.02 6.876 13.82 6.876 12.512ZM12 17.624C10.812 17.624 9.72 17.216 8.856 16.544C8.952 16.352 9.984 14.348 12.876 13.34C12.888 13.328 12.9 13.328 12.912 13.328C13.632 15.2 13.932 16.76 14.004 17.216C13.392 17.48 12.708 17.624 12 17.624ZM14.856 16.748C14.808 16.436 14.532 14.936 13.86 13.1C15.468 12.848 16.872 13.268 17.052 13.316C16.824 14.744 16.008 15.98 14.856 16.748Z" fill="#050810"/>
+              </a>
+          </li>
+          <!-- Dribbble -->
+          <li>
+              <a href="#" target="_blank" class="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <rect y="0.5" width="24" height="24" rx="6" fill="white"/>
+                      <path d="M12 6.5C8.688 6.5 6 9.188 6 12.5C6 15.812 8.688 18.5 12 18.5C15.3 18.5 18 15.812 18 12.5C18 9.188 15.3 6.5 12 6.5ZM15.96 9.26C16.68 10.136 17.1 11.24 17.124 12.452C16.956 12.416 15.264 12.08 13.56 12.284C13.524 12.2 13.488 12.104 13.452 12.02C13.344 11.768 13.236 11.516 13.116 11.276C14.988 10.52 15.852 9.404 15.96 9.26ZM12 7.388C13.296 7.388 14.496 7.88 15.396 8.672C15.3 8.804 14.532 9.836 12.708 10.52C11.868 8.972 10.932 7.712 10.8 7.52C11.184 7.436 11.58 7.388 12 7.388ZM9.816 7.868C9.948 8.048 10.86 9.32 11.712 10.832C9.312 11.468 7.2 11.456 6.972 11.456C7.32 9.86 8.388 8.54 9.816 7.868ZM6.876 12.512C6.876 12.464 6.876 12.404 6.876 12.356C7.092 12.368 9.588 12.392 12.144 11.624C12.288 11.912 12.432 12.2 12.564 12.5C12.504 12.524 12.432 12.536 12.36 12.56C9.72 13.412 8.316 15.74 8.196 15.932C7.368 15.02 6.876 13.82 6.876 12.512ZM12 17.624C10.812 17.624 9.72 17.216 8.856 16.544C8.952 16.352 9.984 14.348 12.876 13.34C12.888 13.328 12.9 13.328 12.912 13.328C13.632 15.2 13.932 16.76 14.004 17.216C13.392 17.48 12.708 17.624 12 17.624ZM14.856 16.748C14.808 16.436 14.532 14.936 13.86 13.1C15.468 12.848 16.872 13.268 17.052 13.316C16.824 14.744 16.008 15.98 14.856 16.748Z" fill="#050810"/>
                   </svg>
-            </a>
-        </div>
-        
+              </a>
+          </li>
+      </ul>
+              
         <h1 class="w-[129px] text-center text-xl sm:text-2xl md:text-3xl xl:text-4xl">LWK</h1>
         <div>
-          <button class="bg-white text-black px-2 py-2 sm:px-6 sm:py-3 md:px-4 md:py-2 lg:px-[12px] lg:py-[12px] text-sm sm:text-base md:text-sm lg:text-sm" >Register Now</button>
+          <button class="bg-white text-black px-2 py-2 sm:px-6 sm:py-3 md:px-4 md:py-2 lg:px-[12px] lg:py-[12px] text-sm sm:text-base md:text-sm lg:text-sm "  >Register Now</button>
         </div>
       </div>
     </header>
     
     <!-- Navbar -->
-    <nav class="bg-white">
+    <nav class="bg-white ">
         <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-2">
           
     <!-- search mobile inima -->
      <div class="flex items-center md:hidden w-full justify-between">
       <div class="relative mt-0 md:mt-0 w-100 md:w-auto">
-        <input type="text" placeholder="Search..." class="border rounded px-16 py-2 w-full sm:w-100 md:w-50 xl:w-50 text-sm sm:text-base md:text-lg">
-        <i class="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 text-sm sm:text-base md:text-lg"></i>
+        <input type="text" placeholder="Search..." class="border rounded px-14 py-2 w-full sm:w-100 md:w-50 xl:w-50 text-sm sm:text-base md:text-lg">
+        <span class="absolute left-5 top-1/2 transform -translate-y-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.9992 21.5002L16.6992 17.2002" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </div>
+      
      <button id="menu-btn"><i class="fas fa-bars text-2xl"></i></button>
     </div>
 
    <!-- Desktop bro -->
-    <div class="hidden md:flex space-x-4 sm:space-x-2 md:space-x-8 xl:space-x-20">
+    <div class="hidden md:flex space-x-4 sm:space-x-2 md:space-x-10 xl:space-x-20">
         <div class="relative group">
             <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Hot News </a>
-            <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+            <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
               <div class="p-4">
-                <div class="grid grid-cols-4 gap-4">
+                <div class="grid grid-cols-5 gap-5">
                   <div class="container mx-auto">
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -122,10 +142,10 @@
                           <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                             <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                             <div class="p-2" >
-                              <div class="max-w-[78%]">
-                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                              <div class="max-w-[100%]">
+                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                           </div>
-                          <div class="flex items-center text-black text-sm">
+                          <div class="flex items-center justify-between text-black text-sm">
                               <span class="flex items-center mr-4">
                                <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                               <span style="color: #848484;">Sep.24.2024</span>
@@ -138,10 +158,10 @@
                           <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                             <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                             <div class="p-2" >
-                              <div class="max-w-[78%]">
-                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                              <div class="max-w-[100%]">
+                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                           </div>
-                          <div class="flex items-center text-black text-sm">
+                          <div class="flex items-center justify-between text-black text-sm">
                               <span class="flex items-center mr-4">
                                <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                               <span style="color: #848484;">Sep.24.2024</span>
@@ -153,10 +173,25 @@
                           <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                             <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                             <div class="p-2" >
-                              <div class="max-w-[78%]">
-                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                              <div class="max-w-[100%]">
+                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                           </div>
-                          <div class="flex items-center text-black text-sm">
+                          <div class="flex items-center justify-between text-black text-sm">
+                              <span class="flex items-center mr-4">
+                               <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
+                              <span style="color: #848484;">Sep.24.2024</span>
+                             </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="container mx-auto">
+                          <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
+                            <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
+                            <div class="p-2" >
+                              <div class="max-w-[100%]">
+                              <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          </div>
+                          <div class="flex items-center justify-between text-black text-sm">
                               <span class="flex items-center mr-4">
                                <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                               <span style="color: #848484;">Sep.24.2024</span>
@@ -172,17 +207,17 @@
     <!-- Natural Disaster -->
     <div class="relative group">
         <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Natural Disaster </a>
-        <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+        <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
           <div class="p-4">
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-5 gap-5">
               <div class="container mx-auto">
                   <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                     <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                     <div class="p-2" >
-                      <div class="max-w-[78%]">
-                      <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                      <div class="max-w-[100%]">
+                      <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                   </div>
-                  <div class="flex items-center text-black text-sm">
+                  <div class="flex items-center justify-between text-black text-sm">
                       <span class="flex items-center mr-4">
                        <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                       <span style="color: #848484;">Sep.24.2024</span>
@@ -195,10 +230,10 @@
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -211,10 +246,10 @@
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -226,10 +261,25 @@
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
+                          <span class="flex items-center mr-4">
+                           <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
+                          <span style="color: #848484;">Sep.24.2024</span>
+                         </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="container mx-auto">
+                      <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
+                        <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
+                        <div class="p-2" >
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                      </div>
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -245,17 +295,17 @@
       <!-- Politic -->
       <div class="relative group">
         <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Politic </a>
-        <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+        <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
           <div class="p-4">
-            <div class="grid grid-cols-4 gap-4">
+            <div class="grid grid-cols-5 gap-5">
               <div class="container mx-auto">
                   <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                     <img alt="mega menu" class="w-full h max-h-[124px]" src="1.png" />
                     <div class="p-2" >
-                      <div class="max-w-[78%]">
-                      <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                      <div class="max-w-[100%]">
+                      <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                   </div>
-                  <div class="flex items-center text-black text-sm">
+                  <div class="flex items-center justify-between text-black text-sm">
                       <span class="flex items-center mr-4">
                        <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                       <span style="color: #848484;">Sep.24.2024</span>
@@ -268,10 +318,10 @@
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -284,10 +334,10 @@
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -299,10 +349,25 @@
                       <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
-                          <div class="max-w-[78%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
+                          <span class="flex items-center mr-4">
+                           <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
+                          <span style="color: #848484;">Sep.24.2024</span>
+                         </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="container mx-auto">
+                      <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
+                        <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
+                        <div class="p-2" >
+                          <div class="max-w-[100%]">
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                      </div>
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -318,17 +383,17 @@
     <!-- bisnis ?? -->
     <div class="relative group">
       <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Business </a>
-      <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+      <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
         <div class="p-4">
-          <div class="grid grid-cols-4 gap-4">
+          <div class="grid grid-cols-5 gap-5">
             <div class="container mx-auto">
                 <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                   <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                   <div class="p-2" >
-                    <div class="max-w-[78%]">
-                    <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                    <div class="max-w-[100%]">
+                    <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                 </div>
-                <div class="flex items-center text-black text-sm">
+                <div class="flex items-center justify-between text-black text-sm">
                     <span class="flex items-center mr-4">
                      <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                     <span style="color: #848484;">Sep.24.2024</span>
@@ -341,10 +406,10 @@
                     <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
-                        <div class="max-w-[78%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <div class="max-w-[100%]">
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -357,10 +422,10 @@
                     <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
-                        <div class="max-w-[78%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <div class="max-w-[100%]">
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -372,10 +437,25 @@
                     <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
-                        <div class="max-w-[78%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <div class="max-w-[100%]">
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
+                        <span class="flex items-center mr-4">
+                         <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
+                        <span style="color: #848484;">Sep.24.2024</span>
+                       </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="container mx-auto">
+                    <a href="#" class="block bg-white overflow-hidden  transition-shadow duration-300">
+                      <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
+                      <div class="p-2" >
+                        <div class="max-w-[100%]">
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                    </div>
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -403,11 +483,11 @@
         </a>
       
         <!-- Dropdown Menu -->
-        <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+        <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
           <div class="p-4">
             <div class="grid grid-cols-5 gap-5">
               <!-- List of Sports -->
-              <div class="bg-white rounded-lg shadow">
+              <div class="bg-white ">
                 <ul class="divide-y divide-gray-200">
                   <li>
                     <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2">Basket Ball</a>
@@ -433,11 +513,11 @@
                   <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                   <div class="p-2" >
                     <div class="max-w-[100%]">
-                    <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                    <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                 </div>
-                <div class="flex items-center text-black text-sm">
+                <div class="flex items-center justify-between text-black text-sm">
                     <span class="flex items-center mr-4">
-                     <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
+                     <span class="w-[4px] h-[17px]  mr-2" style="background: #1A00FF;"></span>Football</span>
                     <span style="color: #848484;">Sep.24.2024</span>
                    </div>
                   </div>
@@ -449,9 +529,9 @@
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
                         <div class="max-w-[100%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -465,9 +545,9 @@
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
                         <div class="max-w-[100%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -480,9 +560,9 @@
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
                         <div class="max-w-[100%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -510,11 +590,11 @@
         </a>
       
         <!-- Dropdown Menu -->
-        <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+        <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
           <div class="p-4">
             <div class="grid grid-cols-5 gap-5">
               <!-- List of Sports -->
-              <div class="bg-white rounded-lg shadow">
+              <div class="bg-white ">
                 <ul class="divide-y divide-gray-200">
                   <li>
                     <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2">Basket Ball</a>
@@ -540,9 +620,9 @@
                   <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                   <div class="p-2" >
                     <div class="max-w-[100%]">
-                    <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                    <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                 </div>
-                <div class="flex items-center text-black text-sm">
+                <div class="flex items-center justify-between text-black text-sm">
                     <span class="flex items-center mr-4">
                      <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                     <span style="color: #848484;">Sep.24.2024</span>
@@ -556,9 +636,9 @@
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
                         <div class="max-w-[100%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -572,9 +652,9 @@
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
                         <div class="max-w-[100%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -587,9 +667,9 @@
                       <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                       <div class="p-2" >
                         <div class="max-w-[100%]">
-                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                        <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                     </div>
-                    <div class="flex items-center text-black text-sm">
+                    <div class="flex items-center justify-between text-black text-sm">
                         <span class="flex items-center mr-4">
                          <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                         <span style="color: #848484;">Sep.24.2024</span>
@@ -615,11 +695,11 @@
             </span>
           </a>
           <!-- Dropdown Menu -->
-        <div class="absolute justify-center top-full mt-2 w-[1200px] h[244px] items-center bg-white border shadow-lg hidden group-hover:block">
+          <div class="absolute left-1/2 top-full transform-translate-x-1/2 mt-4 w-[1200px] h-auto  justify-center items-center shadow-lg hidden group-hover:block " style="box-shadow: 6px 6px 26.9px 0px rgba(206, 206, 206, 0.25);">
             <div class="p-4">
               <div class="grid grid-cols-5 gap-5">
                 <!-- List of Sports -->
-                <div class="bg-white rounded-lg shadow">
+                <div class="bg-white ">
                   <ul class="divide-y divide-gray-200">
                     <li>
                       <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2">Basket Ball</a>
@@ -645,9 +725,9 @@
                     <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                     <div class="p-2" >
                       <div class="max-w-[100%]">
-                      <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                      <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                   </div>
-                  <div class="flex items-center text-black text-sm">
+                  <div class="flex items-center justify-between text-black text-sm">
                       <span class="flex items-center mr-4">
                        <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                       <span style="color: #848484;">Sep.24.2024</span>
@@ -661,9 +741,9 @@
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
                           <div class="max-w-[100%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -677,9 +757,9 @@
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
                           <div class="max-w-[100%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -692,9 +772,9 @@
                         <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
                         <div class="p-2" >
                           <div class="max-w-[100%]">
-                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                          <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
                       </div>
-                      <div class="flex items-center text-black text-sm">
+                      <div class="flex items-center justify-between text-black text-sm">
                           <span class="flex items-center mr-4">
                            <span class="w-[4px] h-[17px]  mr-2"  style="background: #1A00FF;"></span>Football</span>
                           <span style="color: #848484;">Sep.24.2024</span>
@@ -709,46 +789,79 @@
   </div>
         
     <!-- Search desktop inimaa -->
-     <div class="hidden md:block relative mt-2 md:mt-0 w-full md:w-auto">
-      <input type="text" placeholder="Search..." class="border rounded px-2 py-1 w-full sm:w-50 md:w-50 xl:w-50">
-      <i class="fas fa-search absolute right-2 top-2 text-black"></i>
+    <div class="hidden md:block relative mt-2 md:mt-0 w-full md:w-auto">
+      <input type="text" placeholder="Search..." class="border rounded items-center pl-12 pr-2 py-1 w-full sm:w-50 md:w-50 xl:w-[200px] h-[35px]">
+      <span class="absolute left-3 top-1/2 transform -translate-y-1/2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 25" fill="none">
+          <path d="M11 19.5C15.4183 19.5 19 15.9183 19 11.5C19 7.08172 15.4183 3.5 11 3.5C6.58172 3.5 3 7.08172 3 11.5C3 15.9183 6.58172 19.5 11 19.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20.9992 21.5002L16.6992 17.2002" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
     </div>
+    
   </div>
   
   <!-- Mobile menu ini -->
-   <div id="mobile-menu" class="md:hidden bg-white text-black border-t border-b">
+   <div id="mobile-menu" class="md:hidden bg-white " style="color: #4B4B4B;">
     <nav class="flex flex-col p-4 space-y-2">
-      <a href="#" class="text-black hover:text-green-500">Hot News</a>
-      <a href="#" class="text-black hover:text-green-500">Natural Disaster</a>
-      <a href="#" class="text-black hover:text-green-500">Politic</a>
-      <a href="#" class="text-black hover:text-green-500">Business</a>
-      <div class="relative group">
-        <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Sport<i class="fas fa-angle-down"></i></a>
-        <div class="absolute left-0 top-full mt-3 w-40 bg-white border border-gray-200 rounded-lg shadow-lg hidden group-hover:block">
-          <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Traffic</a>
-          <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Fire</a>
-          <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Workplace</a>
-                  </div>
-              </div>                   
-              <div class="relative group">
-                  <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Education <i class="fas fa-angle-down"></i></a>
-                  <div class="absolute left-0 top-full mt-3 w-40 bg-white border border-gray-200 rounded-lg shadow-lg hidden group-hover:block">
-                      <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Traffic</a>
-                      <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Fire</a>
-                      <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Workplace</a>
-                  </div>
-              </div>                   
-              <div class="relative group">
-                  <a href="#" class="relative text-black hover:text-blue-600 sm:text-sm md:text-sm xl:text-base hover-underline">Eccident <i class="fas fa-angle-down"></i></a>
-                  <div class="absolute left-0 top-full mt-3 w-40 bg-white border border-gray-200 rounded-lg shadow-lg hidden group-hover:block">
-                    <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Traffic</a>
-                    <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Fire</a>
-                    <a href="#" class="block px-4 py-2 text-black hover:bg-green-100">Workplace</a>
-                  </div>
-              </div>            
-            </nav>
-        </div>
+      <div class="bg-white">
+        <ul class="divide-y divide-gray-200">
+          <li>
+            <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2" >Hot News</a>
+          </li>
+          <li>
+            <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2" >Natural Disaster</a>
+          </li>
+          <li>
+            <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2" >Politic</a>
+          </li>
+          <li>
+            <a href="#" class="block hover:text-blue-600 hover:bg-blue-100 p-2" >Business</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-600 hover:bg-blue-100 p-2  flex justify-between items-center">
+              <span>Sport</span>
+              <span class="inline-block ml-2">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="chevron-down 3">
+                    <rect width="15" height="15" rx="7.5" fill="#3E86DD"/>
+                    <path id="Vector" d="M3.75 6L7.5 9.75L11.25 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </li>          
+          <li>
+            <a href="#" class="hover:text-blue-600 hover:bg-blue-100 p-2  flex justify-between items-center">
+              <span>Education</span>
+              <span class="inline-block ml-2">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="chevron-down 3">
+                    <rect width="15" height="15" rx="7.5" fill="#3E86DD"/>
+                    <path id="Vector" d="M3.75 6L7.5 9.75L11.25 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-blue-600 hover:bg-blue-100 p-2  flex justify-between items-center">
+              <span>Eccident</span>
+              <span class="inline-block ml-2">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="chevron-down 3">
+                    <rect width="15" height="15" rx="7.5" fill="#3E86DD"/>
+                    <path id="Vector" d="M3.75 6L7.5 9.75L11.25 6" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
+  </div>
+</nav> 
 
     <!-- nyoba nyoba yg mega menu tapi dipisah dulu -->
     <main id="site-main">
@@ -773,9 +886,9 @@
               <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
               <div class="p-2" >
                 <div class="max-w-[100%]">
-                <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
             </div>
-            <div class="flex items-center text-black text-sm">
+            <div class="flex items-center justify-between text-black text-sm">
                 <span class="flex items-center mr-14">
                  <span class="w-[4px] h-[17px] mr-2" style="background: #1A00FF;"></span>Football</span>
                 <span style="color: #848484;">Sep.24.2024</span>
@@ -789,7 +902,7 @@
               <img alt="mega menu" class="w-full h-auto max-h-[124px]" src="1.png" />
               <div class="p-2" >
                 <div class="max-w-[100%]">
-                <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 12px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
+                <h2 class="text-lg sm:text-sm md:text-sm xl:text-sm font-semibold mb-2" style="color: #0B0909; font-size: 14px; font-weight: 400 ;">Riot breaks out after Persib Bandung vs Persija Jakarta match, supporters enter the field</h2>
             </div>
             <div class="flex items-center text-black text-sm">
                 <span class="flex items-center mr-4">
